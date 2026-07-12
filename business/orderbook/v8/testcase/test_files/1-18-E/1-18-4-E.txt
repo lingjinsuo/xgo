@@ -1,0 +1,8 @@
+
+
+
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market.log | grep "TradeCancelHandler" | grep '"SecurityCode":2404,'
+[root@hk-t-lianghua-server01 stock_market_log]#
+
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market.log | grep "TradeHandler" | grep '"SecurityCode":2404,'
+[market]2026/07/09 - 14:00:33.960706    info    D:/code/stock_market/format/stockHandler/handers/tradeHandler.go:76     TradeHandler    {"TradeHandler": {"MsgSize":32,"MsgType":50,"ChannelId":31,"SN":6862,"Url":"239.1.1.24:51001","UdpType":"RefreshU","Offset":48,"LineName":"A","SendTime":1735624829046000000,"ReceiveTime":"2026-07-09T14:00:33.960033954+08:00","SecurityCode":2404,"TradeID":1,"Price":265,"Quantity":1000,"TrdType":0,"Filler":"","TradeTime":1735624829046155000}}

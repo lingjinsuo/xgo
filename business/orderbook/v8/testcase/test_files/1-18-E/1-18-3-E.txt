@@ -1,0 +1,8 @@
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market.log | grep "TradeHandler" | grep '"SecurityCode":2403,'
+[market]2026/07/09 - 09:45:43.031381    info    D:/code/stock_market/format/stockHandler/handers/tradeHandler.go:76     TradeHandler    {"TradeHandler": {"MsgSize":32,"MsgType":50,"ChannelId":31,"SN":5556,"Url":"239.1.1.24:51001","UdpType":"RefreshU","Offset":48,"LineName":"A","SendTime":1735609544332000000,"ReceiveTime":"2026-07-09T09:45:43.030600112+08:00","SecurityCode":2403,"TradeID":1,"Price":130,"Quantity":1000,"TrdType":0,"Filler":"","TradeTime":1735609544331597000}}
+[market]2026/07/09 - 09:51:52.183612    info    D:/code/stock_market/format/stockHandler/handers/tradeHandler.go:76     TradeHandler    {"TradeHandler": {"MsgSize":32,"MsgType":50,"ChannelId":31,"SN":5790,"Url":"239.1.1.24:51001","UdpType":"RefreshU","Offset":48,"LineName":"A","SendTime":1735609913327000000,"ReceiveTime":"2026-07-09T09:51:52.182580113+08:00","SecurityCode":2403,"TradeID":2,"Price":142,"Quantity":1000,"TrdType":0,"Filler":"","TradeTime":1735609913327083000}}
+[market]2026/07/09 - 14:00:42.163764    info    D:/code/stock_market/format/stockHandler/handers/tradeHandler.go:76     TradeHandler    {"TradeHandler": {"MsgSize":32,"MsgType":50,"ChannelId":31,"SN":6867,"Url":"239.1.1.24:51001","UdpType":"RefreshU","Offset":48,"LineName":"A","SendTime":1735624837240000000,"ReceiveTime":"2026-07-09T14:00:42.163147948+08:00","SecurityCode":2403,"TradeID":3,"Price":127,"Quantity":1000,"TrdType":0,"Filler":"","TradeTime":1735624837239323000}}
+
+
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market.log | grep "TradeCancelHandler" | grep '"SecurityCode":2403,'
+[root@hk-t-lianghua-server01 stock_market_log]#
