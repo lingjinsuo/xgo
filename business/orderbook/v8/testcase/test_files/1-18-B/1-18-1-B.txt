@@ -1,0 +1,2 @@
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market.log | grep -a ":2421," | grep "OddLot"
+[root@hk-t-lianghua-server01 stock_market_log]#

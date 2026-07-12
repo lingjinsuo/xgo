@@ -1,0 +1,14 @@
+cat stock_market.log | grep "TradeHandler" | grep '"SecurityCode":2421,'
+cat stock_market.log | grep "TradeCancelHandler" | grep '"SecurityCode":2421,'
+
+使用第一个命令找到交易明细
+使用第二个命令找到这一笔交易明细是否取消了（最后那个 Y ，如果 cancel 有，则显示Y：根据tradeid来看是否取消）
+
+Scenario 2 - E
+TradeTime			TradeID	TradeType	Price	Quantity	"Cancel(Yes or No)"
+	24-12-31T09:46:02.230453		1	102	0.365	10
+	24-12-31T09:46:04.728010		2	22	0.375	1000
+	24-12-31T09:46:07.243769		3	0	0.370	8000	Y
+	24-12-31T09:46:07.243769		4	0	0.375	3000	Y
+	24-12-31T09:46:07.243769		5	0	0.375	6000
+	24-12-31T09:46:07.243769		6	0	0.380	10000

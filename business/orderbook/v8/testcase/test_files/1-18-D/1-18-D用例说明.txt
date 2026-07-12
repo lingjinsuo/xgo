@@ -1,0 +1,11 @@
+第一步：找到对应的日志，有两种方式，推荐第2种方式（因为1方式日志不全）
+1，【不推荐】通过logs/stock_market.log 找到对应的类似以下日志
+2026/07/09 09:47:37.048395	[34mINFO[0m	D:/code/stock_market/format/stockHandler/handers/brokerQueueHandler.go:55	SF test case 1-18 Scenario 1 - D,msg={MsgHeader:{MsgSize:112 MsgType:54 ChannelId:60 Msg:[128 0 1 0 200 22 0 0 0 103 181 223 201 31 22 24 112 0 54 0 117 9 0 0 25 2 0 78 201 25 66 0 1 0 83 0 201 25 66 0 2 0 83 0 221 25 66 0 3 0 83 0 0 0 83 0 4 0 83 0 221 25 66 0 5 0 83 0 221 25 66 0 6 0 83 0 123 23 66 0 7 0 83 0 0 0 83 0 8 0 83 0 221 25 66 0 9 0 83 0 0 0 83 0 10 0 83 0 0 0 83 0 11 0 83 0 0 0 83 0 12 0 83 0 221 25 66 0] SN:5832 Url:239.1.1.28:51000 UdpType:RefreshU Offset:16 LineName:A SendTime:1735609658300000000 ReceiveTime:2026-07-09 09:47:37.048068858 +0800 HKT m=+6894.523174912} SecurityCode:2421 ItemCount:25 Side:2 BQMoreFlag: BrokerQueues:[{Item:6601 Type:B Filler:} {Item:1 Type:S Filler:} {Item:6601 Type:B Filler:} {Item:2 Type:S Filler:} {Item:6621 Type:B Filler:} {Item:3 Type:S Filler:} {Item:0 Type:S Filler:} {Item:4 Type:S Filler:} {Item:6621 Type:B Filler:} {Item:5 Type:S Filler:} {Item:6621 Type:B Filler:} {Item:6 Type:S Filler:} {Item:6011 Type:B Filler:} {Item:7 Type:S Filler:} {Item:0 Type:S Filler:} {Item:8 Type:S Filler:} {Item:6621 Type:B Filler:} {Item:9 Type:S Filler:} {Item:0 Type:S Filler:} {Item:10 Type:S Filler:} {Item:0 Type:S Filler:} {Item:11 Type:S Filler:} {Item:0 Type:S Filler:} {Item:12 Type:S Filler:} {Item:6621 Type:B Filler:}]}
+
+2，【推荐】直接在 stock_market_log/stock_market.log 找到原始日志
+[market]2026/07/09 - 09:45:46.390289    info    D:/code/stock_market/format/stockHandler/handers/brokerQueueHandler.go:103      BrokerQueueHandler      {"BrokerQueueHandler": {"MsgSize":16,"MsgType":54,"ChannelId":60,"SN":5667,"Url":"239.1.1.28:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735609547688000000,"ReceiveTime":"2026-07-09T09:45:46.390184585+08:00","SecurityCode":3414,"ItemCount":1,"Side":1,"BQMoreFlag":"","BrokerQueues":[{"Item":6011,"Type":"B","Filler":""}]}}
+
+第二步：找到对应的 买和卖的数据
+从日志最下面开始找到第一个买和第一个卖即是目标数据
+
+第三步：对比数据
