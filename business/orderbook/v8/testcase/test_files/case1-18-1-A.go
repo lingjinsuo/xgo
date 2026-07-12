@@ -153,4 +153,5 @@ func main() {
 
 	// 4. 打印 OrderBook
 	orderbook.PrintOrderBookTable()
+	orderbook.PrintOrderBook(10)
 }

@@ -77,12 +77,12 @@ func (ob *OrderBook) Add(msg *AddOrder) error {
 	}
 
 	// 获取当前买卖一档价格
-	bid1, _, ask1, _, hasBoth := ob.GetBestBidAsk()
+	//bid1, _, ask1, _, hasBoth := ob.GetBestBidAsk()
 
 	// 检查是否可能导致立即成交
 	if msg.Side == Buy {
 		// 买单：价格 >= 卖一价，可能导致立即成交
-		if hasBoth && msg.Price >= ask1 {
+		/*if hasBoth && msg.Price >= ask1 {
 			// 记录价格交叉前的买卖一价
 			if ob.lastBid1BeforeCross == 0 {
 				ob.lastBid1BeforeCross = bid1
@@ -91,12 +91,12 @@ func (ob *OrderBook) Add(msg *AddOrder) error {
 			// 将订单标记为可能立即成交，但不加入买盘
 			ob.pendingImmediateOrders[msg.OrderId] = order
 			return nil
-		}
+		}*/
 		// 正常买单，加入买盘
 		ob.BuyOrders[msg.OrderId] = order
 	} else if msg.Side == Sell {
 		// 卖单：价格 <= 买一价，可能导致立即成交
-		if hasBoth && msg.Price <= bid1 {
+		/*if hasBoth && msg.Price <= bid1 {
 			// 记录价格交叉前的买卖一价
 			if ob.lastBid1BeforeCross == 0 {
 				ob.lastBid1BeforeCross = bid1
@@ -105,7 +105,7 @@ func (ob *OrderBook) Add(msg *AddOrder) error {
 			// 将订单标记为可能立即成交，但不加入卖盘
 			ob.pendingImmediateOrders[msg.OrderId] = order
 			return nil
-		}
+		}*/
 		// 正常卖单，加入卖盘
 		ob.SellOrders[msg.OrderId] = order
 	} else {
