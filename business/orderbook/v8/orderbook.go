@@ -295,3 +295,38 @@ func (ob *OrderBook) GetPendingImmediateOrders() []*Order {
 	}
 	return orders
 }
+
+// PrintOrderBookTable 打印订单簿表格（订单ID、订单类型、数量、价格）
+func (ob *OrderBook) PrintOrderBookTable() {
+	// 合并所有订单（买盘、卖盘、待成交订单）
+	allOrders := make([]*Order, 0)
+
+	// 添加买盘订单
+	for _, order := range ob.BuyOrders {
+		allOrders = append(allOrders, order)
+	}
+
+	// 添加卖盘订单
+	for _, order := range ob.SellOrders {
+		allOrders = append(allOrders, order)
+	}
+
+	// 添加待成交订单
+	for _, order := range ob.pendingImmediateOrders {
+		allOrders = append(allOrders, order)
+	}
+
+	// 打印表头
+	fmt.Printf("\nOrderID\tOrderType\tQuantity\tPrice\n")
+
+	// 按价格降序打印（价格从高到低）
+	sort.Slice(allOrders, func(i, j int) bool {
+		return allOrders[i].Price > allOrders[j].Price
+	})
+
+	// 打印每行数据
+	for _, order := range allOrders {
+		price := float64(order.Price) / 1000.0
+		fmt.Printf("%d\t%d\t%d\t%.3f\n", order.OrderID, order.Side, order.Quantity, price)
+	}
+}
