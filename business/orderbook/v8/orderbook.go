@@ -296,37 +296,43 @@ func (ob *OrderBook) GetPendingImmediateOrders() []*Order {
 	return orders
 }
 
-// PrintOrderBookTable 打印订单簿表格（订单ID、订单类型、数量、价格）
+// PrintOrderBookTable 打印订单簿表格（Bid-Ask格式）
 func (ob *OrderBook) PrintOrderBookTable() {
-	// 合并所有订单（买盘、卖盘、待成交订单）
-	allOrders := make([]*Order, 0)
-
-	// 添加买盘订单
-	for _, order := range ob.BuyOrders {
-		allOrders = append(allOrders, order)
-	}
-
-	// 添加卖盘订单
-	for _, order := range ob.SellOrders {
-		allOrders = append(allOrders, order)
-	}
-
-	// 添加待成交订单
-	for _, order := range ob.pendingImmediateOrders {
-		allOrders = append(allOrders, order)
-	}
-
 	// 打印表头
-	fmt.Printf("\nOrderID\tOrderType\tQuantity\tPrice\n")
+	fmt.Printf("OrderID\tOrderType\tQuantity\tPrice\tPrice\tQuantity\tOrderType\tOrderID\n")
 
-	// 按价格降序打印（价格从高到低）
-	sort.Slice(allOrders, func(i, j int) bool {
-		return allOrders[i].Price > allOrders[j].Price
-	})
-
-	// 打印每行数据
-	for _, order := range allOrders {
+	// 打印买盘订单（按价格降序）
+	buyOrders := ob.getSortedOrdersByPrice(ob.BuyOrders, true)
+	for _, order := range buyOrders {
 		price := float64(order.Price) / 1000.0
-		fmt.Printf("%d\t%d\t%d\t%.3f\n", order.OrderID, order.Side, order.Quantity, price)
+		fmt.Printf("%d\t2\t%d\t%.3f\n", order.OrderID, order.Quantity, price)
 	}
+
+	// 打印卖盘订单（按价格升序）
+	sellOrders := ob.getSortedOrdersByPrice(ob.SellOrders, false)
+	for _, order := range sellOrders {
+		price := float64(order.Price) / 1000.0
+		fmt.Printf("\t\t\t\t%.3f\t%d\t2\t%d\n", price, order.Quantity, order.OrderID)
+	}
+}
+
+// getSortedOrdersByPrice 按价格排序订单（价格相同时按数量降序）
+func (ob *OrderBook) getSortedOrdersByPrice(orders map[uint64]*Order, descending bool) []*Order {
+	result := make([]*Order, 0, len(orders))
+	for _, order := range orders {
+		result = append(result, order)
+	}
+	sort.Slice(result, func(i, j int) bool {
+		if descending {
+			if result[i].Price == result[j].Price {
+				return result[i].Quantity > result[j].Quantity // 数量大的在前
+			}
+			return result[i].Price > result[j].Price
+		}
+		if result[i].Price == result[j].Price {
+			return result[i].Quantity > result[j].Quantity // 数量大的在前
+		}
+		return result[i].Price < result[j].Price
+	})
+	return result
 }
