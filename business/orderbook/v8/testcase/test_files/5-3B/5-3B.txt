@@ -1,0 +1,79 @@
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market-2026-07-07T05-56-52.312.log | grep "SecurityDefinitionHandler" | grep '"SecurityCode":388,' | tail -n 1
+[market]2026/07/07 - 17:12:41.679181    info    D:/code/stock_market/format/stockHandler/handers/securityDefinitionHandler.go:245       SecurityDefinitionHandler       {"SecurityDefinitionHandler": {"MsgSize":544,"MsgType":11,"ChannelId":501,"SN":262363,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":572,"LineName":"B","SendTime":1598237437717000000,"ReceiveTime":"2026-07-07T17:11:58.482741628+08:00","SecurityCode":388,"MarketCode":"MAIN","ISINCode":"HK0388045442","InstrumentType":"EQTY","ProductType":1,"Filler":"","SpreadTableCode":"01","SecurityShortName":"HKEX                                    ","CurrencyCode":"HKD","SecurityNameGCCS":"香港交易所","SecurityNameGB":"香港交易所","LotSize":100,"Filler1":"","PreviousClosingPrice":350800,"VCMFlag":"Y","ShortSellFlag":"Y","CASFlag":"Y","CCASSFlag":"Y","DummySecurityFlag":"N","Filler2":"","StampDutyFlag":"Y","Filler3":"","ListingDate":20000627,"DelistingDate":0,"FreeText":"+ TRADING RESUMED +                   ","Filler4":"                                                              ","POSFlag":"N","POSUpperLimit":0,"POSLowerLimit":0,"Filler5":"","EFNFlag":"","AccruedInterest":0,"CouponRate":0,"Filler6":"","FaceValue":0,"DecimalsInFaceValue":0,"FaceValueCurrency":"   ","MaturityDate1":0,"InvestorType":" ","Filler7":"","ConversionRatio":0,"StrikePrice1":0,"StrikePrice2":0,"MaturityDate2":0,"CallPutFlag":"","Style":"","Filler8":"","WarrantType":" ","CallPrice":0,"DecimalsInCallPrice":0,"Entitlement":0,"DecimalsInEntitlement":0,"NoWarrantsPerEntitlement":0,"Filler9":"                 ","NoUnderlyingSecurities":0,"UnderlyingSecurityCodes":[]}}
+
+SecurityCode	00388
+MarketCode	MAIN
+ISINCode	HK0388045442
+InstrumentType	EQTY
+ProductType	1
+SpreadTableCode	01
+SecurityShortName	HKEX
+CurrencyCode	HKD
+SecurityNameGCCS	香港交易所　　　
+SecurityNameGB	香港交易所　　　
+LotSize	100
+PreviousClosingPrice	350.800
+VCMFlag	Y
+ShortSellFlag	Y
+CASFlag	Y
+CCASSFlag	Y
+DummySecurityFlag	N
+StampDutyFlag	Y
+ListingDate	20000627
+DelistingDate	0
+FreeText	+ TRADING RESUMED +
+POSFlag	N
+POSUpperLimit	0.000
+POSLowerLimit	0.000
+
+
+
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market-2026-07-07T05-56-52.312.log | grep "SecurityDefinitionHandler" | grep '"SecurityCode":67834,' | tail -n 1
+[market]2026/07/07 - 17:14:34.662374    info    D:/code/stock_market/format/stockHandler/handers/securityDefinitionHandler.go:245       SecurityDefinitionHandler       {"SecurityDefinitionHandler": {"MsgSize":544,"MsgType":11,"ChannelId":501,"SN":271667,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":16,"LineName":"B","SendTime":1598237458444000000,"ReceiveTime":"2026-07-07T17:12:19.22672091+08:00","SecurityCode":67834,"MarketCode":"MAIN","ISINCode":"NA          ","InstrumentType":"WRNT","ProductType":11,"Filler":"","SpreadTableCode":"01","SecurityShortName":"GS#HSI  RC1712R                         ","CurrencyCode":"HKD","SecurityNameGCCS":"恒指高盛七乙牛Ｒ","SecurityNameGB":"恒指高盛七乙牛Ｒ","LotSize":10000,"Filler1":"","PreviousClosingPrice":158,"VCMFlag":"N","ShortSellFlag":"N","CASFlag":"N","CCASSFlag":"Y","DummySecurityFlag":"N","Filler2":"","StampDutyFlag":"N","Filler3":"","ListingDate":20170104,"DelistingDate":0,"FreeText":"CP=21500*          LP9722*29782333*   ","Filler4":"                                                              ","POSFlag":"N","POSUpperLimit":0,"POSLowerLimit":0,"Filler5":"","EFNFlag":"","AccruedInterest":0,"CouponRate":0,"Filler6":"","FaceValue":0,"DecimalsInFaceValue":0,"FaceValueCurrency":"   ","MaturityDate1":0,"InvestorType":" ","Filler7":"","ConversionRatio":0,"StrikePrice1":21300000,"StrikePrice2":0,"MaturityDate2":20171228,"CallPutFlag":"C","Style":"E","Filler8":"","WarrantType":"N","CallPrice":2150000,"DecimalsInCallPrice":2,"Entitlement":0,"DecimalsInEntitlement":3,"NoWarrantsPerEntitlement":0,"Filler9":"HSI              ","NoUnderlyingSecurities":0,"UnderlyingSecurityCodes":[]}}
+
+SecurityCode	67834
+MarketCode	MAIN
+ISINCode	NA
+InstrumentType	WRNT
+ProductType	11
+SpreadTableCode	01
+SecurityShortName	GS#HSI  RC1712R
+CurrencyCode	HKD
+SecurityNameGCCS	恒指高盛七乙牛Ｒ　　　　　　　
+SecurityNameGB	恒指高盛七乙牛Ｒ　　　　　　　
+LotSize	10000
+PreviousClosingPrice	0.158
+VCMFlag	N
+ShortSellFlag	N
+CASFlag	N
+CCASSFlag	Y
+DummySecurityFlag	N
+StampDutyFlag	N
+ListingDate	20170104
+DelistingDate	0
+FreeText	CP=21500*          LP9722*29782333*
+POSFlag	N
+POSUpperLimit	0.000
+POSLowerLimit	0.000
+EFNFlag	N/A
+AccruedInterest	N/A
+CouponRate	N/A
+ConversionRatio	0.000
+StrikePrice1	21300.000
+StrikePrice2	0.000
+MaturityDate	20171228
+CallPutFlag	C
+Style	E
+WarrantType	N
+CallPrice	21500.00
+DecimalInCallPrice	2
+Entitlement	0
+DecimalInEntitlement	3
+NoWarrantsPerEntitlement	0
+NoUnderlyingSecurities	0
+UnderlyingSecurityCode	N/A
+
+
+
+CallPrice	21500.00
+DecimalInCallPrice	2   专门用一个字段来表示有几位小数

@@ -1,0 +1,7 @@
+是针对 21 SecurityStatusHandler
+
+SuspensionIndicator Uint8 1 Indicate whether the security is currently halted/ suspended for trading ：
+2 Trading Halt or Suspend 停止
+3 Resume 重启，重用
+
+
