@@ -1,0 +1,39 @@
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "VCMTriggerHandler" | grep '"SecurityCode":2402,' | tail -n 1
+[market]2026/07/09 - 09:51:48.051058    info    D:/code/stock_market/format/stockHandler/handers/vCMTriggerHandler.go:53        VCMTriggerHandler       {"VCMTriggerHandler": {"MsgSize":36,"MsgType":23,"ChannelId":30,"SN":5553,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735609909199000000,"ReceiveTime":"2026-07-09T09:51:48.05085029+08:00","SecurityCode":2402,"CoolingOffStartTime":1735609909000000000,"CoolingOffEndTime":1735610209000000000,"VCMReferencePrice":10,"VCMLowerPrice":10,"VCMUpperPrice":11}}
+SecurityCode	02402
+CoolingOffStartTime	24-12-31T09:51:49
+CoolingOffEndTime	24-12-31T09:56:49
+VCMReferencePrice	0.010
+VCMLowerPrice	0.010
+VCMUpperPrice	0.011
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "VCMTriggerHandler" | grep '"SecurityCode":2403,' | tail -n 1
+[market]2026/07/09 - 09:51:54.642423    info    D:/code/stock_market/format/stockHandler/handers/vCMTriggerHandler.go:53        VCMTriggerHandler       {"VCMTriggerHandler": {"MsgSize":36,"MsgType":23,"ChannelId":31,"SN":5793,"Url":"239.1.1.24:51001","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735609915785000000,"ReceiveTime":"2026-07-09T09:51:54.642211002+08:00","SecurityCode":2403,"CoolingOffStartTime":1735609915000000000,"CoolingOffEndTime":1735610215000000000,"VCMReferencePrice":130,"VCMLowerPrice":117,"VCMUpperPrice":143}}
+02403
+24-12-31T09:51:55
+24-12-31T09:56:55
+0.130
+0.117
+0.143
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "VCMTriggerHandler" | grep '"SecurityCode":3414,' | tail -n 1
+[market]2026/07/09 - 14:06:37.834441    info    D:/code/stock_market/format/stockHandler/handers/vCMTriggerHandler.go:53        VCMTriggerHandler       {"VCMTriggerHandler": {"MsgSize":36,"MsgType":23,"ChannelId":30,"SN":6651,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735625192776000000,"ReceiveTime":"2026-07-09T14:06:37.834196071+08:00","SecurityCode":3414,"CoolingOffStartTime":1735625192000000000,"CoolingOffEndTime":1735625492000000000,"VCMReferencePrice":200000,"VCMLowerPrice":180000,"VCMUpperPrice":220000}}
+03414
+24-12-31T14:06:32
+24-12-31T14:11:32
+200.000
+180.000
+220.000
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "VCMTriggerHandler" | grep '"SecurityCode":2424,' | tail -n 1
+[market]2026/07/09 - 09:51:39.447336    info    D:/code/stock_market/format/stockHandler/handers/vCMTriggerHandler.go:53        VCMTriggerHandler       {"VCMTriggerHandler": {"MsgSize":36,"MsgType":23,"ChannelId":30,"SN":5552,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735609900604000000,"ReceiveTime":"2026-07-09T09:51:39.447026227+08:00","SecurityCode":2424,"CoolingOffStartTime":1735609900000000000,"CoolingOffEndTime":1735610200000000000,"VCMReferencePrice":9995000,"VCMLowerPrice":9000000,"VCMUpperPrice":9995000}}
+02424
+24-12-31T09:51:40
+24-12-31T09:56:40
+9995.000
+9000.000
+9995.000
+

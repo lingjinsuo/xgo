@@ -1,0 +1,10 @@
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market.log | grep "LiquidityProviderHandler" | grep '"SecurityCode":11169,' | tail -n 1
+[market]2026/07/09 - 08:23:58.834506    info    D:/code/stock_market/format/stockHandler/handers/liquidityProviderHandler.go:53 LiquidityProviderHandler        {"LiquidityProviderHandler": {"MsgSize":20,"MsgType":13,"ChannelId":501,"SN":187588,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":1132,"LineName":"B","SendTime":1735604513954000000,"ReceiveTime":"2026-07-09T08:21:50.799266033+08:00","SecurityCode":11169,"NoLiquidityProviders":5,"LPBrokerNumber":[9992,6991,6992,9723,9991]}}
+
+SecurityCode	11169
+NoLiquidityProviders	5
+LPBrokerNumber (1)	6992
+LPBrokerNumber (2)	6991
+LPBrokerNumber (3)	9991
+LPBrokerNumber (4)	9992
+LPBrokerNumber (5)	9723

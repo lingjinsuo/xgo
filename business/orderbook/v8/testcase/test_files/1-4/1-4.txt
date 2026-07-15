@@ -1,0 +1,66 @@
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "CurrencyRateHandler" | grep '"CurrencyCode":"CAD",' | tail -n 1
+[market]2026/07/09 - 08:24:07.298281    info    D:/code/stock_market/format/stockHandler/handers/currencyRateHandler.go:94      CurrencyRateHandler     {"CurrencyRateHandler": {"MsgSize":16,"MsgType":14,"ChannelId":501,"SN":188384,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":560,"LineName":"B","SendTime":1735604515457000000,"ReceiveTime":"2026-07-09T08:21:52.303508869+08:00","CurrencyCode":"CAD","Filler1":"","CurrencyFactor":0,"Filler2":"","CurrencyRate":66223}}
+CurrencyCode	CAD
+CurrencyFactor	0
+CurrencyRate	6.6223
+
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "CurrencyRateHandler" | grep '"CurrencyCode":"CNY",' | tail -n 1
+[market]2026/07/09 - 08:23:09.973968    info    D:/code/stock_market/format/stockHandler/handers/currencyRateHandler.go:94      CurrencyRateHandler     {"CurrencyRateHandler": {"MsgSize":16,"MsgType":14,"ChannelId":501,"SN":183784,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":1144,"LineName":"B","SendTime":1735604504351000000,"ReceiveTime":"2026-07-09T08:21:41.188221315+08:00","CurrencyCode":"CNY","Filler1":"","CurrencyFactor":0,"Filler2":"","CurrencyRate":10043}}
+CNY
+0
+1.0043
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "CurrencyRateHandler" | grep '"CurrencyCode":"EUR",' | tail -n 1
+[market]2026/07/09 - 08:22:19.718997    info    D:/code/stock_market/format/stockHandler/handers/currencyRateHandler.go:94      CurrencyRateHandler     {"CurrencyRateHandler": {"MsgSize":16,"MsgType":14,"ChannelId":501,"SN":179522,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":1124,"LineName":"B","SendTime":1735604495261000000,"ReceiveTime":"2026-07-09T08:21:32.090494128+08:00","CurrencyCode":"EUR","Filler1":"","CurrencyFactor":0,"Filler2":"","CurrencyRate":101030}}
+EUR
+0
+10.1030
+
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "CurrencyRateHandler" | grep '"CurrencyCode":"GBP",' | tail -n 1
+[market]2026/07/09 - 08:21:56.893636    info    D:/code/stock_market/format/stockHandler/handers/currencyRateHandler.go:94      CurrencyRateHandler     {"CurrencyRateHandler": {"MsgSize":16,"MsgType":14,"ChannelId":501,"SN":177686,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":1144,"LineName":"A","SendTime":1735604490923000000,"ReceiveTime":"2026-07-09T08:21:27.749050972+08:00","CurrencyCode":"GBP","Filler1":"","CurrencyFactor":0,"Filler2":"","CurrencyRate":152625}}
+GBP
+0
+15.2625
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "CurrencyRateHandler" | grep '"CurrencyCode":"HKD",' | tail -n 1
+[market]2026/07/09 - 08:22:59.083540    info    D:/code/stock_market/format/stockHandler/handers/currencyRateHandler.go:94      CurrencyRateHandler     {"CurrencyRateHandler": {"MsgSize":16,"MsgType":14,"ChannelId":501,"SN":182819,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":560,"LineName":"B","SendTime":1735604502344000000,"ReceiveTime":"2026-07-09T08:21:39.179511371+08:00","CurrencyCode":"HKD","Filler1":"","CurrencyFactor":0,"Filler2":"","CurrencyRate":10000}}
+HKD
+0
+1.0000
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$
+^[[A[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "CurrencyRateHandler" | grep '"CurrencyCode":"JPY",' | tail -n 1
+[market]2026/07/09 - 08:23:16.648929    info    D:/code/stock_market/format/stockHandler/handers/currencyRateHandler.go:94      CurrencyRateHandler     {"CurrencyRateHandler": {"MsgSize":16,"MsgType":14,"ChannelId":501,"SN":184373,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":1104,"LineName":"B","SendTime":1735604505575000000,"ReceiveTime":"2026-07-09T08:21:42.413234552+08:00","CurrencyCode":"JPY","Filler1":"","CurrencyFactor":3,"Filler2":"","CurrencyRate":884400}}
+JPY
+3
+88.4400
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "CurrencyRateHandler" | grep '"CurrencyCode":"SGD",' | tail -n 1
+[market]2026/07/09 - 08:22:37.343547    info    D:/code/stock_market/format/stockHandler/handers/currencyRateHandler.go:94      CurrencyRateHandler     {"CurrencyRateHandler": {"MsgSize":16,"MsgType":14,"ChannelId":501,"SN":180937,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":1124,"LineName":"B","SendTime":1735604498465000000,"ReceiveTime":"2026-07-09T08:21:35.297511028+08:00","CurrencyCode":"SGD","Filler1":"","CurrencyFactor":0,"Filler2":"","CurrencyRate":64540}}
+SGD
+0
+6.4540
+
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "CurrencyRateHandler" | grep '"CurrencyCode":"USD",' | tail -n 1
+
+[market]2026/07/09 - 08:23:25.709081    info    D:/code/stock_market/format/stockHandler/handers/currencyRateHandler.go:94      CurrencyRateHandler     {"CurrencyRateHandler": {"MsgSize":16,"MsgType":14,"ChannelId":501,"SN":185058,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":560,"LineName":"B","SendTime":1735604507375000000,"ReceiveTime":"2026-07-09T08:21:44.214855831+08:00","CurrencyCode":"USD","Filler1":"","CurrencyFactor":0,"Filler2":"","CurrencyRate":78000}}
+USD
+0
+7.8000
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "CurrencyRateHandler" | grep '"CurrencyCode":"AUD",' | tail -n 1
+[market]2026/07/09 - 08:23:27.428531    info    D:/code/stock_market/format/stockHandler/handers/currencyRateHandler.go:94      CurrencyRateHandler     {"CurrencyRateHandler": {"MsgSize":16,"MsgType":14,"ChannelId":501,"SN":185202,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":1144,"LineName":"B","SendTime":1735604507708000000,"ReceiveTime":"2026-07-09T08:21:44.547986304+08:00","CurrencyCode":"AUD","Filler1":"","CurrencyFactor":0,"Filler2":"","CurrencyRate":10}}
+AUD
+0
+0.0010

@@ -1,0 +1,28 @@
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market.log | grep "SecurityDefinitionHandler" | grep '"SecurityCode":2,' | tail -n 1
+[market]2026/07/09 - 08:21:52.500807    info    D:/code/stock_market/format/stockHandler/handers/securityDefinitionHandler.go:245       SecurityDefinitionHandler       {"SecurityDefinitionHandler": {"MsgSize":544,"MsgType":11,"ChannelId":501,"SN":177348,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":16,"LineName":"B","SendTime":1735604490040000000,"ReceiveTime":"2026-07-09T08:21:26.865331479+08:00","SecurityCode":2,"MarketCode":"MAIN","ISINCode":"HK0002007356","InstrumentType":"EQTY","ProductType":1,"Filler":"","SpreadTableCode":"01","SecurityShortName":"CLP HOLDINGS                            ","CurrencyCode":"HKD","SecurityNameGCCS":"中電控股","SecurityNameGB":"中电控股","LotSize":500,"Filler1":"","PreviousClosingPrice":75950,"VCMFlag":"Y","ShortSellFlag":"Y","CASFlag":"Y","CCASSFlag":"Y","DummySecurityFlag":"N","Filler2":"","StampDutyFlag":"Y","Filler3":"","ListingDate":19000101,"DelistingDate":0,"FreeText":"*TRADING SUSPENDED*                   ","Filler4":"                                                              ","POSFlag":"Y","POSUpperLimit":0,"POSLowerLimit":0,"Filler5":"","EFNFlag":"","AccruedInterest":0,"CouponRate":0,"Filler6":"","FaceValue":0,"DecimalsInFaceValue":0,"FaceValueCurrency":"   ","MaturityDate1":0,"InvestorType":" ","Filler7":"","ConversionRatio":0,"StrikePrice1":0,"StrikePrice2":0,"MaturityDate2":0,"CallPutFlag":"","Style":"","Filler8":"","WarrantType":" ","CallPrice":0,"DecimalsInCallPrice":0,"Entitlement":0,"DecimalsInEntitlement":0,"NoWarrantsPerEntitlement":0,"Filler9":"                 ","NoUnderlyingSecurities":0,"UnderlyingSecurityCodes":[]}}
+
+SecurityCode	00002
+MarketCode	MAIN
+ISINCode	HK0002007356
+InstrumentType	EQTY
+ProductType	1
+SpreadTableCode	01
+SecurityShortName	CLP HOLDINGS
+CurrencyCode	HKD
+SecurityNameGCCS	中電控股　　　　　　　　　　　
+SecurityNameGB	中电控股　　　　　　　　　　　
+LotSize	500
+PreviousClosingPrice	75.950
+VCMFlag	Y
+ShortSellFlag	Y
+CASFlag	Y
+CCASSFlag	Y
+DummySecurityFlag	N
+StampDutyFlag	Y
+ListingDate	19000101
+DelistingDate	0
+FreeText	*TRADING SUSPENDED*
+POSFlag	Y
+POSUpperLimit	0.000
+POSLowerLimit	0.000
+DomainStmtSecurityCode	0

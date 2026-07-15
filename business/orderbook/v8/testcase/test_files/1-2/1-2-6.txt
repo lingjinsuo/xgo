@@ -1,0 +1,52 @@
+
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market.log | grep "SecurityDefinitionHandler" | grep '"SecurityCode":90022,' | tail -n 1
+[market]2026/07/09 - 08:23:19.290655    info    D:/code/stock_market/format/stockHandler/handers/securityDefinitionHandler.go:245       SecurityDefinitionHandler       {"SecurityDefinitionHandler": {"MsgSize":544,"MsgType":11,"ChannelId":501,"SN":184592,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":16,"LineName":"B","SendTime":1735604506070000000,"ReceiveTime":"2026-07-09T08:21:42.908746394+08:00","SecurityCode":90022,"MarketCode":"MAIN","ISINCode":"EN0000302619","InstrumentType":"WRNT","ProductType":11,"Filler":"","SpreadTableCode":"03","SecurityShortName":"TEST WAR 22                             ","CurrencyCode":"HKD","SecurityNameGCCS":"測試權證","SecurityNameGB":"测试权证","LotSize":10000,"Filler1":"","PreviousClosingPrice":9995000,"VCMFlag":"Y","ShortSellFlag":"Y","CASFlag":"N","CCASSFlag":"Y","DummySecurityFlag":"N","Filler2":"","StampDutyFlag":"Y","Filler3":"","ListingDate":20030701,"DelistingDate":20150228,"FreeText":"                                      ","Filler4":"                                                              ","POSFlag":"N","POSUpperLimit":0,"POSLowerLimit":0,"Filler5":"","EFNFlag":"","AccruedInterest":0,"CouponRate":0,"Filler6":"","FaceValue":0,"DecimalsInFaceValue":0,"FaceValueCurrency":"   ","MaturityDate1":0,"InvestorType":" ","Filler7":"","ConversionRatio":8000,"StrikePrice1":2000,"StrikePrice2":0,"MaturityDate2":20171231,"CallPutFlag":"C","Style":"A","Filler8":"","WarrantType":"X","CallPrice":2147483647,"DecimalsInCallPrice":0,"Entitlement":1000,"DecimalsInEntitlement":0,"NoWarrantsPerEntitlement":100,"Filler9":"CESHKM           ","NoUnderlyingSecurities":0,"UnderlyingSecurityCodes":[]}}
+
+
+SecurityCode	90022
+MarketCode	MAIN
+ISINCode	EN0000302619
+InstrumentType	WRNT
+ProductType	11
+SpreadTableCode	03
+SecurityShortName	test war 22
+CurrencyCode	HKD
+SecurityNameGCCS	測試權證　　　　　　　　　　　
+SecurityNameGB	测试权证　　　　　　　　　　　　　　　　　　　　
+LotSize	10000
+PreviousClosingPrice	9995.000
+VCMFlag	Y
+ShortSellFlag	Y
+CASFlag	N
+CCASSFlag	Y
+DummySecurityFlag	N
+StampDutyFlag	Y
+ListingDate	20030701
+DelistingDate	20150228
+FreeText
+POSFlag	N
+POSUpperLimit	0.000
+POSLowerLimit	0.000
+DomainStmtSecurityCode	0
+EFNFlag	N/A
+AccruedInterest	N/A
+CouponRate	N/A
+FaceValue 	N/A
+DecimalsInFaceValue	N/A
+FaceValueCurrency 	N/A
+MaturityDate	N/A
+InvestorType	N/A
+ConversionRatio	8.000
+StrikePrice1	2.000
+StrikePrice2	0.000
+MaturityDate	20171231
+CallPutFlag	C
+Style	A
+WarrantType	X
+CallPrice	2147483647
+DecimalsInCallPrice	0
+Entitlement	1000
+DecimalsInEntitlement	0
+NoWarrantsPerEntitlement	100
+NoUnderlyingSecurities	0
+UnderlyingSecurityCode

@@ -1,0 +1,19 @@
+OrderID	OrderType	Quantity	Price	Price	Quantity	OrderType	OrderID
+4353	2	6000	0.360
+3841	2	3000	0.355
+1793	2	2000	0.350
+				0.370	8000	2	6657
+				0.375	6000	2	8705
+				0.375	3000	2	13313
+				0.380	10000	2	8961
+
+
+Buy				Sell
+OrderID	OrderType	Quantity	Price	Price	Quantity	OrderType	OrderID
+4353	2	6000	0.360
+3841	2	3000	0.355
+1793	2	2000	0.350
+				0.370	8000	2	6657
+				0.375	6000	2	8705
+				0.375	3000	2	13313
+				0.380	10000	2	8961

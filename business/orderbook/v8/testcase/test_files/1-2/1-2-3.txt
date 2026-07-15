@@ -1,0 +1,36 @@
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market.log | grep "SecurityDefinitionHandler" | grep '"SecurityCode":4222,' | tail -n 1
+[market]2026/07/09 - 08:23:22.824067    info    D:/code/stock_market/format/stockHandler/handers/securityDefinitionHandler.go:245       SecurityDefinitionHandler       {"SecurityDefinitionHandler": {"MsgSize":544,"MsgType":11,"ChannelId":501,"SN":184840,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":560,"LineName":"B","SendTime":1735604506763000000,"ReceiveTime":"2026-07-09T08:21:43.602288402+08:00","SecurityCode":4222,"MarketCode":"MAIN","ISINCode":"HK0000207800","InstrumentType":"BOND","ProductType":4,"Filler":"","SpreadTableCode":"03","SecurityShortName":"HKGB IBOND 1708                         ","CurrencyCode":"HKD","SecurityNameGCCS":"政府債券一七零八","SecurityNameGB":"政府债券一七零八","LotSize":100,"Filler1":"","PreviousClosingPrice":100050,"VCMFlag":"N","ShortSellFlag":"N","CASFlag":"N","CCASSFlag":"Y","DummySecurityFlag":"N","Filler2":"","StampDutyFlag":"N","Filler3":"","ListingDate":20140812,"DelistingDate":0,"FreeText":"NOMINAL:HKD10K                        ","Filler4":"                                                              ","POSFlag":"N","POSUpperLimit":0,"POSLowerLimit":0,"Filler5":"","EFNFlag":"N","AccruedInterest":0,"CouponRate":2680,"Filler6":"","FaceValue":0,"DecimalsInFaceValue":3,"FaceValueCurrency":"HKD","MaturityDate1":0,"InvestorType":"P","Filler7":"","ConversionRatio":0,"StrikePrice1":0,"StrikePrice2":0,"MaturityDate2":0,"CallPutFlag":"","Style":"","Filler8":"","WarrantType":" ","CallPrice":0,"DecimalsInCallPrice":0,"Entitlement":0,"DecimalsInEntitlement":0,"NoWarrantsPerEntitlement":0,"Filler9":"                 ","NoUnderlyingSecurities":0,"UnderlyingSecurityCodes":[]}}
+
+SecurityCode	04222
+MarketCode	MAIN
+ISINCode	HK0000207800
+InstrumentType	BOND
+ProductType	4
+SpreadTableCode	03
+SecurityShortName	HKGB IBOND 1708
+CurrencyCode	HKD
+SecurityNameGCCS	政府債券一七零八　　　　　　　
+SecurityNameGB	政府债券一七零八　　　　　　　　　
+LotSize	100
+PreviousClosingPrice	100.050
+VCMFlag	N
+ShortSellFlag	N
+CASFlag	N
+CCASSFlag	Y
+DummySecurityFlag	N
+StampDutyFlag	N
+ListingDate	20140812
+DelistingDate	0
+FreeText	NOMINAL:HKD10K
+POSFlag	N
+POSUpperLimit	0.000
+POSLowerLimit	0.000
+DomainStmtSecurityCode	0
+EFNFlag	N
+AccruedInterest	0.000
+CouponRate	2.680
+FaceValue 	0
+DecimalsInFaceValue	3
+FaceValueCurrency 	HKD
+MaturityDate	0
+InvestorType	P

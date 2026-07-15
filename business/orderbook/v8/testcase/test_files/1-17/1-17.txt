@@ -1,0 +1,55 @@
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndexDataHandler" | grep '"IndexCode":"0001400' | tail -n 1
+[market]2026/07/09 - 16:08:58.281321    info    D:/code/stock_market/format/stockHandler/handers/indexDataHandler.go:42 IndexDataHandler        {"IndexDataHandler": {"MsgSize":112,"MsgType":71,"ChannelId":41,"SN":444174,"Url":"239.1.1.25:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1594195730744000000,"ReceiveTime":"2026-07-09T16:08:58.281271526+08:00","IndexCode":"0001400    ","IndexStatus":"C","IndexTime":1594195730000000000,"IndexValue":-9223372036854775808,"NetChgPrevDay":694300,"HighValue":121977000,"LowValue":119270800,"EASValue":1204653,"IndexTurnover":542731233100000,"OpeningValue":-9223372036854775808,"ClosingValue":121977000,"PreviousSesClose":-9223372036854775808,"IndexVolume":-9223372036854775808,"NetChgPrevDayPct":5700,"Exception":" ","Filler":"   "}}
+IndexCode	0001400
+IndexStatus 	C
+IndexTime	20-07-08T16:08:50.000000
+IndexValue 	12173.9000 *
+NetChgPrevDay 	69.4300
+HighValue 	12197.7000
+LowValue 	11927.0800
+EASValue 	12046.53
+IndexTurnover 	54273123310.0000
+OpeningValue 	12143.4100 *
+ClosingValue 	12197.7000
+PreviousSesClose 	12128.27 *
+IndexVolume 	N/A
+NetChgPrevDayPct 	0.5700
+Exception
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndexDataHandler" | grep '"IndexCode":"CSI300' | tail -n 1
+[market]2026/07/09 - 16:30:09.691377    info    D:/code/stock_market/format/stockHandler/handers/indexDataHandler.go:42 IndexDataHandler        {"IndexDataHandler": {"MsgSize":112,"MsgType":71,"ChannelId":42,"SN":156658,"Url":"239.1.1.26:51000","UdpType":"RefreshU","Offset":352,"LineName":"A","SendTime":1594197002069000000,"ReceiveTime":"2026-07-09T16:30:09.69112026+08:00","IndexCode":"CSI300     ","IndexStatus":" ","IndexTime":1594196984000000000,"IndexValue":38798930,"NetChgPrevDay":-250425,"HighValue":38839010,"LowValue":38299155,"EASValue":-9223372036854775808,"IndexTurnover":1566045272270000,"OpeningValue":38626948,"ClosingValue":38798930,"PreviousSesClose":39049355,"IndexVolume":11513912800,"NetChgPrevDayPct":-6400,"Exception":" ","Filler":"   "}}
+IndexCode	CSI300
+IndexStatus
+IndexTime	20-07-08T16:29:44.000000
+IndexValue 	3879.8930
+NetChgPrevDay 	-25.0425
+HighValue 	3883.9010
+LowValue 	3829.9155
+EASValue 	NA
+IndexTurnover 	156604527227.0000
+OpeningValue 	3862.6948
+ClosingValue 	3879.8930
+PreviousSesClose 	3904.9355
+IndexVolume 	11513912800
+NetChgPrevDayPct 	-0.6400
+Exception
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndexDataHandler" | grep '"IndexCode":"SPHKG' | tail -n 1
+[market]2026/07/09 - 16:21:16.650844    info    D:/code/stock_market/format/stockHandler/handers/indexDataHandler.go:42 IndexDataHandler        {"IndexDataHandler": {"MsgSize":112,"MsgType":71,"ChannelId":43,"SN":3220,"Url":"239.1.1.27:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1594196469045000000,"ReceiveTime":"2026-07-09T16:21:16.650791943+08:00","IndexCode":"SPHKG      ","IndexStatus":"C","IndexTime":1594196468000000000,"IndexValue":-9223372036854775808,"NetChgPrevDay":-15200,"HighValue":2449800,"LowValue":2415500,"EASValue":-9223372036854775808,"IndexTurnover":-9223372036854775808,"OpeningValue":2447400,"ClosingValue":2436300,"PreviousSesClose":2451500,"IndexVolume":-9223372036854775808,"NetChgPrevDayPct":-6200,"Exception":" ","Filler":"   "}}
+IndexCode	SPHKG
+IndexStatus 	C
+IndexTime	20-07-08T16:21:08.000000
+IndexValue 	243.8800 *
+NetChgPrevDay 	-1.5200
+HighValue 	244.9800
+LowValue 	241.5500
+EASValue 	N/A
+IndexTurnover 	N/A
+OpeningValue 	244.7400
+ClosingValue 	243.6300
+PreviousSesClose 	245.1500
+IndexVolume 	N/A
+NetChgPrevDayPct 	-0.6200
+Exception

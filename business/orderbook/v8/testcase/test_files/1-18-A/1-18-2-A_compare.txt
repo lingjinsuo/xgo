@@ -1,0 +1,14 @@
+OrderID	OrderType	Quantity	Price	Price	Quantity	OrderType	OrderID
+99074	2	3000	0.380
+81410	2	6000	0.360
+81666	2	3000	0.355
+82178	2	2000	0.350
+
+
+Buy				Sell
+OrderID	OrderType	Quantity	Price	Price	Quantity	OrderType	OrderID
+99074	2	3000	0.380
+81410	2	6000	0.360
+81666	2	3000	0.355
+82178	2	2000	0.350
+				Empty Book

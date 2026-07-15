@@ -1,0 +1,5 @@
+cat stock_market.log | grep "MarketDefinitionHandler" | tail -n 10
+
+
+[market]2026/07/09 - 08:15:06.373274    info    D:/code/stock_market/format/stockHandler/handers/marketDefinitionHandler.go:90  MarketDefinitionHandler {"MarketDefinitionHandler": {"MarketCode":"MAIN","MarketName":"MAIN BOARD               ","CurrencyCode":"HKD","NumberOfSecurities":6831,"MsgSize":40,"MsgType":10,"ChannelId":501,"SN":121922,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":1204,"LineName":"B","SendTime":1735603975511000000,"ReceiveTime":"2026-07-09T08:12:52.189054247+08:00"}}
+

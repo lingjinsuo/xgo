@@ -1,0 +1,26 @@
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndexDefinitionHandler" | grep '"IndexCode":"0001400' | tail -n 1
+[market]2026/07/09 - 08:05:38.877124    info    D:/code/stock_market/format/stockHandler/handers/indexDefinitionHandler.go:30   IndexDefinitionHandler  {"IndexDefinitionHandler": {"MsgSize":20,"MsgType":70,"ChannelId":541,"SN":3547,"Url":"239.1.1.35:51000","UdpType":"RefreshR","Offset":96,"LineName":"B","SendTime":1594166736729000000,"ReceiveTime":"2026-07-09T08:05:38.876010949+08:00","IndexCode":"0001400    ","IndexSource":"H","CurrencyCode":"   ","Filler":" "}}
+IndexCode	0001400
+IndexSource	H
+CurrencyCode
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndexDefinitionHandler" | grep '"IndexCode":"CES100' | tail -n 1
+[market]2026/07/09 - 08:08:38.883981    info    D:/code/stock_market/format/stockHandler/handers/indexDefinitionHandler.go:30   IndexDefinitionHandler  {"IndexDefinitionHandler": {"MsgSize":20,"MsgType":70,"ChannelId":542,"SN":7150,"Url":"239.1.1.36:51000","UdpType":"RefreshR","Offset":156,"LineName":"A","SendTime":1594166916731000000,"ReceiveTime":"2026-07-09T08:08:38.882951632+08:00","IndexCode":"CES100     ","IndexSource":"C","CurrencyCode":"HKD","Filler":" "}}
+CES100
+C
+HKD
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndexDefinitionHandler" | grep '"IndexCode":"CSI300' | tail -n 1
+[market]2026/07/09 - 08:08:38.884282    info    D:/code/stock_market/format/stockHandler/handers/indexDefinitionHandler.go:30   IndexDefinitionHandler  {"IndexDefinitionHandler": {"MsgSize":20,"MsgType":70,"ChannelId":542,"SN":7160,"Url":"239.1.1.36:51000","UdpType":"RefreshR","Offset":356,"LineName":"A","SendTime":1594166916731000000,"ReceiveTime":"2026-07-09T08:08:38.882951632+08:00","IndexCode":"CSI300     ","IndexSource":"C","CurrencyCode":"CNY","Filler":" "}}
+CSI300
+C
+CNY
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndexDefinitionHandler" | grep '"IndexCode":"SPHKG' | tail -n 1
+[market]2026/07/09 - 08:08:38.883322    info    D:/code/stock_market/format/stockHandler/handers/indexDefinitionHandler.go:30   IndexDefinitionHandler  {"IndexDefinitionHandler": {"MsgSize":20,"MsgType":70,"ChannelId":543,"SN":718,"Url":"239.1.1.37:51000","UdpType":"RefreshR","Offset":36,"LineName":"B","SendTime":1594166916730000000,"ReceiveTime":"2026-07-09T08:08:38.882644304+08:00","IndexCode":"SPHKG      ","IndexSource":"S","CurrencyCode":"   ","Filler":" "}}
+SPHKG
+S
+

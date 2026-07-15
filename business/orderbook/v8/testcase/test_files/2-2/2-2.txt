@@ -1,0 +1,79 @@
+1，先通过 命令找到对应的所有数据
+2，再找到 10：36分以前的数据（因为阶段2是10点36前结束）
+3，比对数据
+
+注意：
+answerbook中叫 DecimalInCallPrice，代码中叫 DecimalsInCallPrice （answerbook中是错的）
+
+
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market-2026-07-07T05-56-52.312.log | grep "SecurityDefinitionHandler" | grep '"SecurityCode":1,'
+[market]2026/07/07 - 09:02:12.546422    info    D:/code/stock_market/format/stockHandler/handers/securityDefinitionHandler.go:245       SecurityDefinitionHandler       {"SecurityDefinitionHandler": {"MsgSize":544,"MsgType":11,"ChannelId":501,"SN":188689,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":580,"LineName":"B","SendTime":1598662952740000000,"ReceiveTime":"2026-07-07T09:01:40.279411679+08:00","SecurityCode":1,"MarketCode":"MAIN","ISINCode":"KYG217651051","InstrumentType":"EQTY","ProductType":1,"Filler":"","SpreadTableCode":"01","SecurityShortName":"CKH HOLDINGS                            ","CurrencyCode":"HKD","SecurityNameGCCS":"長和","SecurityNameGB":"长和","LotSize":500,"Filler1":"","PreviousClosingPrice":101002,"VCMFlag":"Y","ShortSellFlag":"Y","CASFlag":"Y","CCASSFlag":"Y","DummySecurityFlag":"N","Filler2":"","StampDutyFlag":"Y","Filler3":"","ListingDate":20150318,"DelistingDate":0,"FreeText":"*TRADING SUSPENDED*                   ","Filler4":"                                                              ","POSFlag":"N","POSUpperLimit":0,"POSLowerLimit":0,"Filler5":"","EFNFlag":"","AccruedInterest":0,"CouponRate":0,"Filler6":"","FaceValue":0,"DecimalsInFaceValue":0,"FaceValueCurrency":"   ","MaturityDate1":0,"InvestorType":" ","Filler7":"","ConversionRatio":0,"StrikePrice1":0,"StrikePrice2":0,"MaturityDate2":0,"CallPutFlag":"","Style":"","Filler8":"","WarrantType":" ","CallPrice":0,"DecimalsInCallPrice":0,"Entitlement":0,"DecimalsInEntitlement":0,"NoWarrantsPerEntitlement":0,"Filler9":"                 ","NoUnderlyingSecurities":0,"UnderlyingSecurityCodes":[]}}
+
+SecurityCode	00001
+MarketCode	MAIN
+ISINCode	KYG217651051
+InstrumentType	EQTY
+ProductType	1
+SpreadTableCode	01
+SecurityShortName	CKH HOLDINGS
+CurrencyCode	HKD
+SecurityNameGCCS	長和　　
+SecurityNameGB	长和　　　　　　　　　　　　　
+LotSize	500
+PreviousClosingPrice	101.002
+VCMFlag	Y
+ShortSellFlag	Y
+CASFlag	Y
+CCASSFlag	Y
+DummySecurityFlag	N
+StampDutyFlag	Y
+ListingDate	20150318
+DelistingDate	0
+FreeText	*TRADING SUSPENDED*
+
+
+
+
+
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market-2026-07-07T05-56-52.312.log | grep "SecurityDefinitionHandler" | grep '"SecurityCode":67116,'
+[market]2026/07/07 - 09:04:07.461195    info    D:/code/stock_market/format/stockHandler/handers/securityDefinitionHandler.go:245       SecurityDefinitionHandler       {"SecurityDefinitionHandler": {"MsgSize":552,"MsgType":11,"ChannelId":501,"SN":198335,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":16,"LineName":"B","SendTime":1598662974219000000,"ReceiveTime":"2026-07-07T09:02:01.775420491+08:00","SecurityCode":67116,"MarketCode":"MAIN","ISINCode":"CH0349698685","InstrumentType":"WRNT","ProductType":11,"Filler":"","SpreadTableCode":"01","SecurityShortName":"CS#TENCTRC1710A                         ","CurrencyCode":"HKD","SecurityNameGCCS":"騰訊瑞信七十牛Ａ","SecurityNameGB":"腾讯瑞信七十牛Ａ","LotSize":10000,"Filler1":"","PreviousClosingPrice":520,"VCMFlag":"N","ShortSellFlag":"N","CASFlag":"N","CCASSFlag":"Y","DummySecurityFlag":"N","Filler2":"","StampDutyFlag":"N","Filler3":"","ListingDate":20161229,"DelistingDate":0,"FreeText":"CP=HKD159.98*      LP9700*21016619*   ","Filler4":"                                                              ","POSFlag":"N","POSUpperLimit":0,"POSLowerLimit":0,"Filler5":"","EFNFlag":"","AccruedInterest":0,"CouponRate":0,"Filler6":"","FaceValue":0,"DecimalsInFaceValue":0,"FaceValueCurrency":"   ","MaturityDate1":0,"InvestorType":" ","Filler7":"","ConversionRatio":100000,"StrikePrice1":157480,"StrikePrice2":0,"MaturityDate2":20171011,"CallPutFlag":"C","Style":"E","Filler8":"","WarrantType":"N","CallPrice":159980,"DecimalsInCallPrice":3,"Entitlement":0,"DecimalsInEntitlement":3,"NoWarrantsPerEntitlement":0,"Filler9":"                 ","NoUnderlyingSecurities":1,"UnderlyingSecurityCodes":[{"UnderlyingSecurityCode":700,"Filler":""}]}}
+
+
+SecurityCode	67116
+MarketCode	MAIN
+ISINCode	CH0349698685
+InstrumentType	WRNT
+ProductType	11
+SpreadTableCode	01
+SecurityShortName	CS#TENCTRC1710A
+CurrencyCode	HKD
+SecurityNameGCCS	騰訊瑞信七十牛Ａ
+SecurityNameGB	腾讯瑞信七十牛Ａ
+LotSize	10000
+PreviousClosingPrice	0.520
+VCMFlag	N
+ShortSellFlag	N
+CASFlag	N
+CCASSFlag	Y
+DummySecurityFlag	N
+StampDutyFlag	N
+ListingDate	20161229
+DelistingDate	0
+FreeText	CP=HKD159.98*      LP9700*21016619*
+EFNFlag	N/A
+AccruedInterest	N/A
+CouponRate	N/A
+ConversionRatio	100.000
+StrikePrice1	157.480
+StrikePrice2	0.000
+MaturityDate	20171011
+CallPutFlag	C
+Style	E
+WarrantType	N
+CallPrice	159.980
+DecimalInCallPrice	3
+Entitlement	0
+DecimalInEntitlement	3
+NoWarrantsPerEntitlement	0
+NoUnderlyingSecurities	1
+UnderlyingSecurityCode	700

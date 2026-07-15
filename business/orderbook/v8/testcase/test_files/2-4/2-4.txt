@@ -1,0 +1,25 @@
+1，先通过 命令找到对应的所有数据
+2，再找到 10：36分以前的数据（因为阶段2是10点36前结束）
+3，比对数据
+
+
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market-2026-07-07T05-56-52.312.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"GEM'
+[market]2026/07/07 - 10:35:26.000201    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":29,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":48,"LineName":"A","SendTime":1598668574957000000,"ReceiveTime":"2026-07-07T10:35:25.99997131+08:00","MarketCode":"GEM ","Filler1":"","TradingSessionSubID":0,"TradingSesStatus":100,"TradingSesControlFlag":"1","Filler2":"    ","StartDateTime":1598668520000000000,"EndDateTime":0}}
+
+MarketCode	GEM
+TradingSessionSubID	0
+TradingSesStatus	100
+TradingSesControlFlag	1
+StartDateTime	20-08-29T10:35:20
+EndDateTime	N/A
+
+
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market-2026-07-07T05-56-52.312.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN'
+[market]2026/07/07 - 10:35:26.000353    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":30,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":80,"LineName":"A","SendTime":1598668574957000000,"ReceiveTime":"2026-07-07T10:35:25.99997131+08:00","MarketCode":"MAIN","Filler1":"","TradingSessionSubID":0,"TradingSesStatus":100,"TradingSesControlFlag":"1","Filler2":"    ","StartDateTime":1598668520000000000,"EndDateTime":0}}
+
+MarketCode	MAIN
+TradingSessionSubID	0
+TradingSesStatus	100
+TradingSesControlFlag	1
+StartDateTime	20-08-29T10:35:20
+EndDateTime	N/A

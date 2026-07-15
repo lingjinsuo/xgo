@@ -1,0 +1,3 @@
+cat stock_market.log | grep -a "】," | grep -av "【TradeHandler】" | grep -a ":2421-" > m.txt
+
+下次做的时候把日志开启来就不用这样麻烦了。

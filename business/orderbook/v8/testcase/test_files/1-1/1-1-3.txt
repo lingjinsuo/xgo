@@ -1,0 +1,8 @@
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "MarketDefinitionHandler" | grep '"MarketCode":"MAIN' | tail -n 1
+[market]2026/07/09 - 08:24:07.830706    info    D:/code/stock_market/format/stockHandler/handers/marketDefinitionHandler.go:90  MarketDefinitionHandler {"MarketDefinitionHandler": {"MarketCode":"MAIN","MarketName":"MAIN BOARD               ","CurrencyCode":"HKD","NumberOfSecurities":6831,"MsgSize":40,"MsgType":10,"ChannelId":501,"SN":188426,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":1204,"LineName":"B","SendTime":1735604515556000000,"ReceiveTime":"2026-07-09T08:21:52.402640824+08:00"}}
+
+
+MAIN
+MAIN BOARD
+6831
+HKD

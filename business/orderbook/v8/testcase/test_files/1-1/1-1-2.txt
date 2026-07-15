@@ -1,0 +1,8 @@
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "MarketDefinitionHandler" | grep '"MarketCode":"GEM' | tail -n 1
+[market]2026/07/09 - 08:24:07.830636    info    D:/code/stock_market/format/stockHandler/handers/marketDefinitionHandler.go:90  MarketDefinitionHandler {"MarketDefinitionHandler": {"MarketCode":"GEM ","MarketName":"GEM                      ","CurrencyCode":"HKD","NumberOfSecurities":450,"MsgSize":40,"MsgType":10,"ChannelId":501,"SN":188424,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":1124,"LineName":"B","SendTime":1735604515556000000,"ReceiveTime":"2026-07-09T08:21:52.402640824+08:00"}}
+
+GEM
+GEM
+450
+HKD

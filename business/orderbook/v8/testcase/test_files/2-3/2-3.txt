@@ -1,0 +1,30 @@
+1，先通过 命令找到对应的所有数据
+2，再找到 10：36分以前的数据（因为阶段2是10点36前结束）
+3，比对数据
+
+
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market-2026-07-07T05-56-52.312.log | grep "CurrencyRateHandler" | grep '"CurrencyCode":"CNY",'
+[market]2026/07/07 - 09:03:41.710884    info    D:/code/stock_market/format/stockHandler/handers/currencyRateHandler.go:94      CurrencyRateHandler     {"CurrencyRateHandler": {"MsgSize":16,"MsgType":14,"ChannelId":501,"SN":196275,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":580,"LineName":"A","SendTime":1598662969333000000,"ReceiveTime":"2026-07-07T09:01:56.886154974+08:00","CurrencyCode":"CNY","Filler1":"","CurrencyFactor":0,"Filler2":"","CurrencyRate":10043}}
+CurrencyCode	CNY
+CurrencyFactor	0
+CurrencyRate	1.0043
+
+
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market-2026-07-07T05-56-52.312.log | grep "CurrencyRateHandler" | grep '"CurrencyCode":"JPY",'
+[market]2026/07/07 - 09:03:49.125625    info    D:/code/stock_market/format/stockHandler/handers/currencyRateHandler.go:94      CurrencyRateHandler     {"CurrencyRateHandler": {"MsgSize":16,"MsgType":14,"ChannelId":501,"SN":196914,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":1104,"LineName":"B","SendTime":1598662970664000000,"ReceiveTime":"2026-07-07T09:01:58.217576724+08:00","CurrencyCode":"JPY","Filler1":"","CurrencyFactor":3,"Filler2":"","CurrencyRate":884400}}
+JPY
+3
+88.44
+
+
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market-2026-07-07T05-56-52.312.log | grep "CurrencyRateHandler" | grep '"CurrencyCode":"CAD",'
+[market]2026/07/07 - 09:05:02.546831    info    D:/code/stock_market/format/stockHandler/handers/currencyRateHandler.go:94      CurrencyRateHandler     {"CurrencyRateHandler": {"MsgSize":16,"MsgType":14,"ChannelId":501,"SN":203122,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":1116,"LineName":"B","SendTime":1598662984722000000,"ReceiveTime":"2026-07-07T09:02:12.286742949+08:00","CurrencyCode":"CAD","Filler1":"","CurrencyFactor":0,"Filler2":"","CurrencyRate":66223}}
+CAD
+0
+6.6223
+
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market-2026-07-07T05-56-52.312.log | grep "CurrencyRateHandler" | grep '"CurrencyCode":"EUR",' | tail -n 1
+[market]2026/07/07 - 09:02:45.496977    info    D:/code/stock_market/format/stockHandler/handers/currencyRateHandler.go:94      CurrencyRateHandler     {"CurrencyRateHandler": {"MsgSize":16,"MsgType":14,"ChannelId":501,"SN":191401,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":1124,"LineName":"A","SendTime":1598662959027000000,"ReceiveTime":"2026-07-07T09:01:46.571968189+08:00","CurrencyCode":"EUR","Filler1":"","CurrencyFactor":0,"Filler2":"","CurrencyRate":101030}}
+EUR
+0
+10.1030

@@ -1,0 +1,17 @@
+OrderID	OrderType	Quantity	Price	Price	Quantity	OrderType	OrderID
+				0.237	1000	2	267010
+				0.238	1000	2	266498
+				0.250	1000	2	265986
+				0.260	1000	2	265730
+				0.265	1000	2	264194
+
+
+
+Buy				Sell
+OrderID	OrderType	Quantity	Price	Price	Quantity	OrderType	OrderID
+Empty Book
+				0.237	1000	2	267010
+				0.238	1000	2	266498
+				0.250	1000	2	265986
+				0.260	1000	2	265730
+				0.265	1000	2	264194

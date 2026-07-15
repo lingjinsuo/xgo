@@ -1,0 +1,10 @@
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "LiquidityProviderHandler" | grep '"SecurityCode":10354,' | tail -n 1
+[market]2026/07/09 - 08:23:53.667481    info    D:/code/stock_market/format/stockHandler/handers/liquidityProviderHandler.go:53 LiquidityProviderHandler        {"LiquidityProviderHandler": {"MsgSize":12,"MsgType":13,"ChannelId":501,"SN":187108,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":560,"LineName":"B","SendTime":1735604513018000000,"ReceiveTime":"2026-07-09T08:21:49.86252837+08:00","SecurityCode":10354,"NoLiquidityProviders":1,"LPBrokerNumber":[9703]}}
+
+SecurityCode	10354
+NoLiquidityProviders	1
+LPBrokerNumber (1)	9703
+LPBrokerNumber (2)	NA
+LPBrokerNumber (3)	NA
+LPBrokerNumber (4)	NA
+LPBrokerNumber (5)	NA

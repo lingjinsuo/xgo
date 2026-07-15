@@ -1,0 +1,10 @@
+OrderID	OrderType	Quantity	Price	Price	Quantity	OrderType	OrderID
+				220.400	1000	2	78593
+				220.600	1000	2	81153
+
+
+Buy				Sell
+OrderID	OrderType	Quantity	Price	Price	Quantity	OrderType	OrderID
+Empty Book
+				220.400	1000	2	78593
+				220.600	1000	2	81153

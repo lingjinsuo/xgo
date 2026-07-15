@@ -1,0 +1,60 @@
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "ReferencePriceHandler" | grep '"SecurityCode":2411,' | grep -E '"SN":(1115|5165|7689|10701)'
+[market]2026/07/09 - 09:14:58.355828    info    D:/code/stock_market/format/stockHandler/handers/referencePriceHandler.go:78    ReferencePriceHandler   {"ReferencePriceHandler": {"MsgSize":20,"MsgType":43,"ChannelId":30,"SN":1115,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":36,"LineName":"A","SendTime":1735607700427000000,"ReceiveTime":"2026-07-09T09:14:58.355642234+08:00","SecurityCode":2411,"ReferencePrice":60000,"LowerPrice":51000,"UpperPrice":69000}}
+"SF" SeqNum	1115
+SecurityCode	2411
+ReferencePrice	60.000
+LowerPrice	51.000
+UpperPrice	69.000
+
+[market]2026/07/09 - 09:20:30.335152    info    D:/code/stock_market/format/stockHandler/handers/referencePriceHandler.go:78    ReferencePriceHandler   {"ReferencePriceHandler": {"MsgSize":20,"MsgType":43,"ChannelId":30,"SN":5165,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":136,"LineName":"A","SendTime":1735608032251000000,"ReceiveTime":"2026-07-09T09:20:30.334413994+08:00","SecurityCode":2411,"ReferencePrice":0,"LowerPrice":0,"UpperPrice":0}}
+5165
+2411
+0.000
+0.000
+0.000
+
+[market]2026/07/09 - 16:00:08.207672    info    D:/code/stock_market/format/stockHandler/handers/referencePriceHandler.go:78    ReferencePriceHandler   {"ReferencePriceHandler": {"MsgSize":20,"MsgType":43,"ChannelId":30,"SN":7689,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":56,"LineName":"A","SendTime":1735632000481000000,"ReceiveTime":"2026-07-09T16:00:08.207479812+08:00","SecurityCode":2411,"ReferencePrice":60000,"LowerPrice":57000,"UpperPrice":63000}}
+7689
+2411
+60.000
+57.000
+63.000
+
+[market]2026/07/09 - 16:06:08.111492    info    D:/code/stock_market/format/stockHandler/handers/referencePriceHandler.go:78    ReferencePriceHandler   {"ReferencePriceHandler": {"MsgSize":20,"MsgType":43,"ChannelId":30,"SN":10701,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735632360160000000,"ReceiveTime":"2026-07-09T16:06:08.111336396+08:00","SecurityCode":2411,"ReferencePrice":60000,"LowerPrice":59900,"UpperPrice":59900}}
+10701
+2411
+60.000
+59.900
+59.900
+
+
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "ReferencePriceHandler" | grep '"SecurityCode":2921,' | grep -E '"SN":(1179|5415|7754|10748)'
+[market]2026/07/09 - 09:14:58.376733    info    D:/code/stock_market/format/stockHandler/handers/referencePriceHandler.go:78    ReferencePriceHandler   {"ReferencePriceHandler": {"MsgSize":20,"MsgType":43,"ChannelId":30,"SN":1179,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":36,"LineName":"A","SendTime":1735607700448000000,"ReceiveTime":"2026-07-09T09:14:58.376582164+08:00","SecurityCode":2921,"ReferencePrice":3500000,"LowerPrice":2976000,"UpperPrice":4024000}}
+1179
+2921
+3500.000
+2976.000
+4024.000
+
+[market]2026/07/09 - 09:20:30.379525    info    D:/code/stock_market/format/stockHandler/handers/referencePriceHandler.go:78    ReferencePriceHandler   {"ReferencePriceHandler": {"MsgSize":20,"MsgType":43,"ChannelId":30,"SN":5415,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":276,"LineName":"A","SendTime":1735608032294000000,"ReceiveTime":"2026-07-09T09:20:30.378622583+08:00","SecurityCode":2921,"ReferencePrice":0,"LowerPrice":0,"UpperPrice":0}}
+5415
+2921
+0.000
+0.000
+0.000
+
+[market]2026/07/09 - 16:00:08.237412    info    D:/code/stock_market/format/stockHandler/handers/referencePriceHandler.go:78    ReferencePriceHandler   {"ReferencePriceHandler": {"MsgSize":20,"MsgType":43,"ChannelId":30,"SN":7754,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735632000510000000,"ReceiveTime":"2026-07-09T16:00:08.237311906+08:00","SecurityCode":2921,"ReferencePrice":3850000,"LowerPrice":3658000,"UpperPrice":4042000}}
+7754
+2921
+3850.000
+3658.000
+4042.000
+
+[market]2026/07/09 - 16:06:08.135338    info    D:/code/stock_market/format/stockHandler/handers/referencePriceHandler.go:78    ReferencePriceHandler   {"ReferencePriceHandler": {"MsgSize":20,"MsgType":43,"ChannelId":30,"SN":10748,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735632360183000000,"ReceiveTime":"2026-07-09T16:06:08.135186328+08:00","SecurityCode":2921,"ReferencePrice":3850000,"LowerPrice":3844000,"UpperPrice":3852000}}
+10748
+2921
+3850.000
+3844.000
+3852.000

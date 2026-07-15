@@ -1,0 +1,25 @@
+1，先通过 命令找到对应的所有数据
+2，再找到 10：36分以前的数据（因为阶段2是10点36前结束）
+3，比对数据
+
+
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market-2026-07-07T05-56-52.312.log | grep "MarketDefinitionHandler" | grep '"MarketCode":"ETS'
+[market]2026/07/07 - 09:05:03.325141    info    D:/code/stock_market/format/stockHandler/handers/marketDefinitionHandler.go:90  MarketDefinitionHandler {"MarketDefinitionHandler": {"MarketCode":"ETS ","MarketName":"EXTENDED TRADING SEC     ","CurrencyCode":"USD","NumberOfSecurities":48,"MsgSize":40,"MsgType":10,"ChannelId":501,"SN":203195,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":700,"LineName":"B","SendTime":1598662984884000000,"ReceiveTime":"2026-07-07T09:02:12.448678864+08:00"}}
+
+
+MarketCode	ETS
+MarketName	EXTENDED TRADING SEC
+CurrencyCode	USD
+NumberOfSecurities	48
+
+
+
+
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market-2026-07-07T05-56-52.312.log | grep "MarketDefinitionHandler" | grep '"MarketCode":"GEM'
+[market]2026/07/07 - 09:05:03.325028    info    D:/code/stock_market/format/stockHandler/handers/marketDefinitionHandler.go:90  MarketDefinitionHandler {"MarketDefinitionHandler": {"MarketCode":"GEM ","MarketName":"GEM                      ","CurrencyCode":"HKD","NumberOfSecurities":429,"MsgSize":40,"MsgType":10,"ChannelId":501,"SN":203192,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":580,"LineName":"B","SendTime":1598662984884000000,"ReceiveTime":"2026-07-07T09:02:12.448678864+08:00"}}
+
+GEM
+GEM
+HKD
+429
+

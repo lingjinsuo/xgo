@@ -1,0 +1,28 @@
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market.log | grep "SecurityDefinitionHandler" | grep '"SecurityCode":2821,' | tail -n 1
+[market]2026/07/09 - 08:23:03.594034    info    D:/code/stock_market/format/stockHandler/handers/securityDefinitionHandler.go:245       SecurityDefinitionHandler       {"SecurityDefinitionHandler": {"MsgSize":544,"MsgType":11,"ChannelId":501,"SN":183240,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":16,"LineName":"B","SendTime":1735604503154000000,"ReceiveTime":"2026-07-09T08:21:39.990205305+08:00","SecurityCode":2821,"MarketCode":"MAIN","ISINCode":"SG9999002026","InstrumentType":"TRST","ProductType":17,"Filler":"","SpreadTableCode":"03","SecurityShortName":"ABF PAIF                                ","CurrencyCode":"USD","SecurityNameGCCS":"沛富基金","SecurityNameGB":"沛富基金","LotSize":10,"Filler1":"","PreviousClosingPrice":110650,"VCMFlag":"N","ShortSellFlag":"Y","CASFlag":"Y","CCASSFlag":"Y","DummySecurityFlag":"N","Filler2":"","StampDutyFlag":"N","Filler3":"","ListingDate":20050707,"DelistingDate":0,"FreeText":"                                      ","Filler4":"                                                              ","POSFlag":"Y","POSUpperLimit":127200,"POSLowerLimit":94100,"Filler5":"","EFNFlag":"","AccruedInterest":0,"CouponRate":0,"Filler6":"","FaceValue":0,"DecimalsInFaceValue":0,"FaceValueCurrency":"   ","MaturityDate1":0,"InvestorType":" ","Filler7":"","ConversionRatio":0,"StrikePrice1":0,"StrikePrice2":0,"MaturityDate2":0,"CallPutFlag":"","Style":"","Filler8":"","WarrantType":" ","CallPrice":0,"DecimalsInCallPrice":0,"Entitlement":0,"DecimalsInEntitlement":0,"NoWarrantsPerEntitlement":0,"Filler9":"                 ","NoUnderlyingSecurities":0,"UnderlyingSecurityCodes":[]}}
+
+SecurityCode	02821
+MarketCode	MAIN
+ISINCode	SG9999002026
+InstrumentType	TRST
+ProductType	17
+SpreadTableCode	03
+SecurityShortName	ABF PAIF
+CurrencyCode	USD
+SecurityNameGCCS	沛富基金　　　　　　　　　　　
+SecurityNameGB	沛富基金　　　　　　　　　　　
+LotSize	10
+PreviousClosingPrice	110.65
+VCMFlag	N
+ShortSellFlag	Y
+CASFlag	Y
+CCASSFlag	Y
+DummySecurityFlag	N
+StampDutyFlag	N
+ListingDate	20050707
+DelistingDate	0
+FreeText
+POSFlag	Y
+POSUpperLimit	127.200
+POSLowerLimit	94.100
+DomainStmtSecurityCode	0

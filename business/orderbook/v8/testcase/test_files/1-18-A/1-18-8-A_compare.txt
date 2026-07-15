@@ -1,0 +1,7 @@
+OrderID	OrderType	Quantity	Price	Price	Quantity	OrderType	OrderID
+
+
+Buy				Sell
+OrderID	OrderType	Quantity	Price	Price	Quantity	OrderType	OrderID
+Empty Book
+				Empty Book

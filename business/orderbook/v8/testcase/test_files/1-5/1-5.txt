@@ -1,0 +1,185 @@
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN"' | grep '"SN":3,'
+可能早上那一波没收到3的行情，暂定为 Y
+SeqNum	3
+MarketCode	MAIN
+TradingSessionSubID	100
+TradingSesStatus	0
+TradingSesControlFlag	0
+StartDateTime	NA
+EndDateTime	NA
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN"' | grep '"SN":7,'
+[market]2026/07/09 - 08:59:57.586747    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":7,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735606800007000000,"ReceiveTime":"2026-07-09T08:59:57.5865484+08:00","MarketCode":"MAIN","Filler1":"","TradingSessionSubID":1,"TradingSesStatus":20,"TradingSesControlFlag":"0","Filler2":"    ","StartDateTime":1735606800000000000,"EndDateTime":1735607699000000000}}
+7
+MAIN
+1
+20
+0
+24-12-31T09:00:00
+24-12-31T09:14:59
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN"' | grep '"SN":11,'
+[market]2026/07/09 - 09:14:58.106906    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":11,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735607700183000000,"ReceiveTime":"2026-07-09T09:14:58.106715436+08:00","MarketCode":"MAIN","Filler1":"","TradingSessionSubID":101,"TradingSesStatus":20,"TradingSesControlFlag":"0","Filler2":"    ","StartDateTime":1735607700000000000,"EndDateTime":1735607999000000000}}
+11
+MAIN
+101
+20
+0
+24-12-31T09:15:00
+24-12-31T09:19:59
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN"' | grep '"SN":15,'
+[market]2026/07/09 - 09:19:58.040942    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":15,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735608000006000000,"ReceiveTime":"2026-07-09T09:19:58.040738248+08:00","MarketCode":"MAIN","Filler1":"","TradingSessionSubID":108,"TradingSesStatus":20,"TradingSesControlFlag":"0","Filler2":"    ","StartDateTime":1735608000000000000,"EndDateTime":1735608479000000000}}
+15
+MAIN
+108
+20
+0
+24-12-31T09:20:00
+24-12-31T09:27:59
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN"' | grep '"SN":19,'
+[market]2026/07/09 - 09:20:28.906748    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":19,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735608030843000000,"ReceiveTime":"2026-07-09T09:20:28.906542204+08:00","MarketCode":"MAIN","Filler1":"","TradingSessionSubID":2,"TradingSesStatus":20,"TradingSesControlFlag":"0","Filler2":"    ","StartDateTime":1735608030000000000,"EndDateTime":1735608030000000000}}
+19
+MAIN
+2
+20
+0
+24-12-31T09:20:30
+24-12-31T09:20:30
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN"' | grep '"SN":23,'
+[market]2026/07/09 - 09:20:30.132793    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":23,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735608032052000000,"ReceiveTime":"2026-07-09T09:20:30.132618054+08:00","MarketCode":"MAIN","Filler1":"","TradingSessionSubID":7,"TradingSesStatus":20,"TradingSesControlFlag":"0","Filler2":"    ","StartDateTime":1735608031000000000,"EndDateTime":1735608599000000000}}
+23
+MAIN
+7
+20
+0
+24-12-31T09:20:31
+24-12-31T09:29:59
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN"' | grep '"SN":27,'
+[market]2026/07/09 - 09:29:58.317702    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":27,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735608600007000000,"ReceiveTime":"2026-07-09T09:29:58.31750864+08:00","MarketCode":"MAIN","Filler1":"","TradingSessionSubID":3,"TradingSesStatus":30,"TradingSesControlFlag":"0","Filler2":"    ","StartDateTime":1735608600000000000,"EndDateTime":1735617599000000000}}
+27
+MAIN
+3
+30
+0
+24-12-31T09:30:00
+24-12-31T11:59:59
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN"' | grep '"SN":30,'
+[market]2026/07/09 - 12:00:01.975332    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":30,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735617600003000000,"ReceiveTime":"2026-07-09T12:00:01.975155546+08:00","MarketCode":"MAIN","Filler1":"","TradingSessionSubID":102,"TradingSesStatus":10,"TradingSesControlFlag":"0","Filler2":"    ","StartDateTime":1735617600000000000,"EndDateTime":1735617899000000000}}
+30
+MAIN
+102
+10
+0
+24-12-31T12:00:00
+24-12-31T12:04:59
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN"' | grep '"SN":33,'
+[market]2026/07/09 - 12:05:02.103857    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":33,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":48,"LineName":"A","SendTime":1735617900009000000,"ReceiveTime":"2026-07-09T12:05:02.103489766+08:00","MarketCode":"MAIN","Filler1":"","TradingSessionSubID":103,"TradingSesStatus":50,"TradingSesControlFlag":"0","Filler2":"    ","StartDateTime":1735617900000000000,"EndDateTime":1735619399000000000}}
+33
+MAIN
+103
+50
+0
+24-12-31T12:05:00
+24-12-31T12:29:59
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN"' | grep '"SN":36,'
+[market]2026/07/09 - 12:30:02.717372    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":36,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735619400009000000,"ReceiveTime":"2026-07-09T12:30:02.717252503+08:00","MarketCode":"MAIN","Filler1":"","TradingSessionSubID":104,"TradingSesStatus":30,"TradingSesControlFlag":"0","Filler2":"    ","StartDateTime":1735619400000000000,"EndDateTime":1735621199000000000}}
+36
+MAIN
+104
+30
+0
+24-12-31T12:30:00
+24-12-31T12:59:59
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN"' | grep '"SN":39,'
+[market]2026/07/09 - 13:00:03.454443    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":39,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735621200004000000,"ReceiveTime":"2026-07-09T13:00:03.454255033+08:00","MarketCode":"MAIN","Filler1":"","TradingSessionSubID":3,"TradingSesStatus":30,"TradingSesControlFlag":"0","Filler2":"    ","StartDateTime":1735621200000000000,"EndDateTime":1735631999000000000}}
+39
+MAIN
+3
+30
+0
+24-12-31T13:00:00
+24-12-31T15:59:59
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN"' | grep '"SN":43,'
+[market]2026/07/09 - 16:00:07.953807    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":43,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735632000232000000,"ReceiveTime":"2026-07-09T16:00:07.953596431+08:00","MarketCode":"MAIN","Filler1":"","TradingSessionSubID":105,"TradingSesStatus":40,"TradingSesControlFlag":"0","Filler2":"    ","StartDateTime":1735632000000000000,"EndDateTime":1735632059000000000}}
+43
+MAIN
+105
+40
+0
+24-12-31T16:00:00
+24-12-31T16:00:59
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN"' | grep '"SN":47,'
+[market]2026/07/09 - 16:01:07.791275    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":47,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735632060004000000,"ReceiveTime":"2026-07-09T16:01:07.79105835+08:00","MarketCode":"MAIN","Filler1":"","TradingSessionSubID":5,"TradingSesStatus":40,"TradingSesControlFlag":"0","Filler2":"    ","StartDateTime":1735632060000000000,"EndDateTime":1735632359000000000}}
+47
+MAIN
+5
+40
+0
+24-12-31T16:01:00
+24-12-31T16:05:59
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN"' | grep '"SN":51,'
+[market]2026/07/09 - 16:06:08.057374    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":51,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735632360107000000,"ReceiveTime":"2026-07-09T16:06:08.057198351+08:00","MarketCode":"MAIN","Filler1":"","TradingSessionSubID":106,"TradingSesStatus":40,"TradingSesControlFlag":"0","Filler2":"    ","StartDateTime":1735632360000000000,"EndDateTime":1735632479000000000}}
+51
+MAIN
+106
+40
+0
+24-12-31T16:06:00
+24-12-31T16:07:59
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN"' | grep '"SN":55,'
+[market]2026/07/09 - 16:08:07.993382    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":55,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735632480006000000,"ReceiveTime":"2026-07-09T16:08:07.99319845+08:00","MarketCode":"MAIN","Filler1":"","TradingSessionSubID":107,"TradingSesStatus":40,"TradingSesControlFlag":"0","Filler2":"    ","StartDateTime":1735632480000000000,"EndDateTime":1735632659000000000}}
+55
+MAIN
+107
+40
+0
+24-12-31T16:08:00
+24-12-31T16:10:59
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN"' | grep '"SN":59,'
+[market]2026/07/09 - 16:08:51.040289    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":59,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735632523021000000,"ReceiveTime":"2026-07-09T16:08:51.040067655+08:00","MarketCode":"MAIN","Filler1":"","TradingSessionSubID":4,"TradingSesStatus":40,"TradingSesControlFlag":"0","Filler2":"    ","StartDateTime":1735632522000000000,"EndDateTime":1735632522000000000}}
+59
+MAIN
+4
+40
+0
+24-12-31T16:08:42
+24-12-31T16:08:42
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "TradingSessionStatusHandler" | grep '"MarketCode":"MAIN"' | grep '"SN":63,'
+[market]2026/07/09 - 16:08:53.030569    info    D:/code/stock_market/format/stockHandler/handers/tradingSessionStatusHandler.go:181     TradingSessionStatusHandler     {"TradingSessionStatusHandler": {"MsgSize":32,"MsgType":20,"ChannelId":2,"SN":63,"Url":"239.1.1.21:51001","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735632525002000000,"ReceiveTime":"2026-07-09T16:08:53.030309271+08:00","MarketCode":"MAIN","Filler1":"","TradingSessionSubID":0,"TradingSesStatus":100,"TradingSesControlFlag":"0","Filler2":"    ","StartDateTime":1735632524000000000,"EndDateTime":1735632524000000000}}
+63
+MAIN
+0
+100
+0
+24-12-31T16:08:44
+24-12-31T16:08:44

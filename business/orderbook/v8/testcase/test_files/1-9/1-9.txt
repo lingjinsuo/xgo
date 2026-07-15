@@ -1,0 +1,86 @@
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndicativeEquilibriumPriceHandler" | grep '"SecurityCode":2405,' | grep '"SN":92,'
+[market]2026/07/09 - 09:00:45.401017    info    D:/code/stock_market/format/stockHandler/handers/indicativeEquilibriumPriceHandler.go:87        IndicativeEquilibriumPriceHandler       {"IndicativeEquilibriumPriceHandler": {"MsgSize":20,"MsgType":41,"ChannelId":30,"SN":92,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735606847793000000,"ReceiveTime":"2026-07-09T09:00:45.400775469+08:00","SecurityCode":2405,"Price":360,"AggregateQuantity":3000}}
+"SF" SeqNum	92
+SecurityCode	2405
+Price	0.360
+AggregateQuantity	3000
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndicativeEquilibriumPriceHandler" | grep '"SecurityCode":2405,' | grep '"SN":96,'
+[market]2026/07/09 - 09:00:54.443573    info    D:/code/stock_market/format/stockHandler/handers/indicativeEquilibriumPriceHandler.go:87        IndicativeEquilibriumPriceHandler       {"IndicativeEquilibriumPriceHandler": {"MsgSize":20,"MsgType":41,"ChannelId":30,"SN":96,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735606856828000000,"ReceiveTime":"2026-07-09T09:00:54.443364387+08:00","SecurityCode":2405,"Price":355,"AggregateQuantity":10000}}
+96
+2405
+0.355
+10000
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndicativeEquilibriumPriceHandler" | grep '"SecurityCode":2405,' | grep '"SN":98,'
+[market]2026/07/09 - 09:00:58.051094    info    D:/code/stock_market/format/stockHandler/handers/indicativeEquilibriumPriceHandler.go:87        IndicativeEquilibriumPriceHandler       {"IndicativeEquilibriumPriceHandler": {"MsgSize":20,"MsgType":41,"ChannelId":30,"SN":98,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735606860434000000,"ReceiveTime":"2026-07-09T09:00:58.050857355+08:00","SecurityCode":2405,"Price":360,"AggregateQuantity":12000}}
+98
+2405
+0.360
+12000
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndicativeEquilibriumPriceHandler" | grep '"SecurityCode":2405,' | grep '"SN":100,'
+[market]2026/07/09 - 09:01:02.097324    info    D:/code/stock_market/format/stockHandler/handers/indicativeEquilibriumPriceHandler.go:87        IndicativeEquilibriumPriceHandler       {"IndicativeEquilibriumPriceHandler": {"MsgSize":20,"MsgType":41,"ChannelId":30,"SN":100,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735606864480000000,"ReceiveTime":"2026-07-09T09:01:02.097110291+08:00","SecurityCode":2405,"Price":355,"AggregateQuantity":10000}}
+100
+2405
+0.355
+10000
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndicativeEquilibriumPriceHandler" | grep '"SecurityCode":2405,' | grep '"SN":102,'
+[market]2026/07/09 - 09:01:06.474219    info    D:/code/stock_market/format/stockHandler/handers/indicativeEquilibriumPriceHandler.go:87        IndicativeEquilibriumPriceHandler       {"IndicativeEquilibriumPriceHandler": {"MsgSize":20,"MsgType":41,"ChannelId":30,"SN":102,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735606868856000000,"ReceiveTime":"2026-07-09T09:01:06.474001312+08:00","SecurityCode":2405,"Price":360,"AggregateQuantity":12000}}
+102
+2405
+0.360
+12000
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndicativeEquilibriumPriceHandler" | grep '"SecurityCode":2405,' | grep '"SN":104,'
+[market]2026/07/09 - 09:01:10.786827    info    D:/code/stock_market/format/stockHandler/handers/indicativeEquilibriumPriceHandler.go:87        IndicativeEquilibriumPriceHandler       {"IndicativeEquilibriumPriceHandler": {"MsgSize":20,"MsgType":41,"ChannelId":30,"SN":104,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735606873167000000,"ReceiveTime":"2026-07-09T09:01:10.786645208+08:00","SecurityCode":2405,"Price":360,"AggregateQuantity":13000}}
+104
+2405
+0.360
+13000
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndicativeEquilibriumPriceHandler" | grep '"SecurityCode":2405,' | grep '"SN":108,'
+[market]2026/07/09 - 09:01:15.338034    info    D:/code/stock_market/format/stockHandler/handers/indicativeEquilibriumPriceHandler.go:87        IndicativeEquilibriumPriceHandler       {"IndicativeEquilibriumPriceHandler": {"MsgSize":20,"MsgType":41,"ChannelId":30,"SN":108,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735606877718000000,"ReceiveTime":"2026-07-09T09:01:15.337816053+08:00","SecurityCode":2405,"Price":360,"AggregateQuantity":8000}}
+108
+2405
+0.360
+8000
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndicativeEquilibriumPriceHandler" | grep '"SecurityCode":2405,' | grep '"SN":110,'
+[market]2026/07/09 - 09:01:21.828740    info    D:/code/stock_market/format/stockHandler/handers/indicativeEquilibriumPriceHandler.go:87        IndicativeEquilibriumPriceHandler       {"IndicativeEquilibriumPriceHandler": {"MsgSize":20,"MsgType":41,"ChannelId":30,"SN":110,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735606884207000000,"ReceiveTime":"2026-07-09T09:01:21.828521481+08:00","SecurityCode":2405,"Price":370,"AggregateQuantity":11000}}
+110
+2405
+0.370
+11000
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndicativeEquilibriumPriceHandler" | grep '"SecurityCode":2405,' | grep '"SN":112,'
+[market]2026/07/09 - 09:01:23.577141    info    D:/code/stock_market/format/stockHandler/handers/indicativeEquilibriumPriceHandler.go:87        IndicativeEquilibriumPriceHandler       {"IndicativeEquilibriumPriceHandler": {"MsgSize":20,"MsgType":41,"ChannelId":30,"SN":112,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735606885955000000,"ReceiveTime":"2026-07-09T09:01:23.57694213+08:00","SecurityCode":2405,"Price":360,"AggregateQuantity":14000}}
+112
+2405
+0.360
+14000
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndicativeEquilibriumPriceHandler" | grep '"SecurityCode":2405,' | grep '"SN":3546,'
+[market]2026/07/09 - 09:20:29.534300    info    D:/code/stock_market/format/stockHandler/handers/indicativeEquilibriumPriceHandler.go:87        IndicativeEquilibriumPriceHandler       {"IndicativeEquilibriumPriceHandler": {"MsgSize":20,"MsgType":41,"ChannelId":30,"SN":3546,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":80,"LineName":"A","SendTime":1735608031462000000,"ReceiveTime":"2026-07-09T09:20:29.533696702+08:00","SecurityCode":2405,"Price":0,"AggregateQuantity":0}}
+3546
+2405
+0.000
+0
+
+
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "IndicativeEquilibriumPriceHandler" | grep '"SecurityCode":2405,' | grep '"SN":11404,'
+[market]2026/07/09 - 16:08:51.181478    info    D:/code/stock_market/format/stockHandler/handers/indicativeEquilibriumPriceHandler.go:87        IndicativeEquilibriumPriceHandler       {"IndicativeEquilibriumPriceHandler": {"MsgSize":20,"MsgType":41,"ChannelId":30,"SN":11404,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735632523159000000,"ReceiveTime":"2026-07-09T16:08:51.181380082+08:00","SecurityCode":2405,"Price":0,"AggregateQuantity":0}}
+11404
+2405
+0.000
+0

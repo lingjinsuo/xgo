@@ -1,0 +1,30 @@
+
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market.log | grep "SecurityDefinitionHandler" | grep '"SecurityCode":82847,' | tail -n 1
+[market]2026/07/09 - 08:23:50.160039    info    D:/code/stock_market/format/stockHandler/handers/securityDefinitionHandler.go:245       SecurityDefinitionHandler       {"SecurityDefinitionHandler": {"MsgSize":544,"MsgType":11,"ChannelId":501,"SN":186790,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":560,"LineName":"B","SendTime":1735604512388000000,"ReceiveTime":"2026-07-09T08:21:49.232037236+08:00","SecurityCode":82847,"MarketCode":"MAIN","ISINCode":"XS0000300011","InstrumentType":"BOND","ProductType":4,"Filler":"","SpreadTableCode":"03","SecurityShortName":"TEST BOND 11                            ","CurrencyCode":"JPY","SecurityNameGCCS":"安碩富時一百—Ｒ","SecurityNameGB":"安硕富时一百　Ｒ","LotSize":1,"Filler1":"","PreviousClosingPrice":1000,"VCMFlag":"Y","ShortSellFlag":"Y","CASFlag":"Y","CCASSFlag":"Y","DummySecurityFlag":"N","Filler2":"","StampDutyFlag":"Y","Filler3":"","ListingDate":20130630,"DelistingDate":0,"FreeText":"                                      ","Filler4":"                                                              ","POSFlag":"Y","POSUpperLimit":1150,"POSLowerLimit":850,"Filler5":"","EFNFlag":"N","AccruedInterest":0,"CouponRate":1000,"Filler6":"","FaceValue":1,"DecimalsInFaceValue":0,"FaceValueCurrency":"USD","MaturityDate1":20991231,"InvestorType":"R","Filler7":"","ConversionRatio":0,"StrikePrice1":0,"StrikePrice2":0,"MaturityDate2":0,"CallPutFlag":"","Style":"","Filler8":"","WarrantType":" ","CallPrice":0,"DecimalsInCallPrice":0,"Entitlement":0,"DecimalsInEntitlement":0,"NoWarrantsPerEntitlement":0,"Filler9":"                 ","NoUnderlyingSecurities":0,"UnderlyingSecurityCodes":[]}}
+
+
+
+SecurityCode	82847
+MarketCode	MAIN
+ISINCode	XS0000300011
+InstrumentType	BOND
+ProductType	4
+SpreadTableCode	03
+SecurityShortName	test bond 11
+CurrencyCode	JPY
+SecurityNameGCCS	安碩富時一百—Ｒ　　　　　　　　　　　　　　　　　　　　　　　
+SecurityNameGB	安硕富时一百　Ｒ　　　　　　　　　　　　　　　　　　　　　　　　
+LotSize	1
+PreviousClosingPrice	1.000
+VCMFlag	Y
+ShortSellFlag	Y
+CASFlag	Y
+CCASSFlag	Y
+DummySecurityFlag	N
+StampDutyFlag	Y
+ListingDate	20130630
+DelistingDate	0
+FreeText
+POSFlag	Y
+POSUpperLimit	1.150
+POSLowerLimit	0.850

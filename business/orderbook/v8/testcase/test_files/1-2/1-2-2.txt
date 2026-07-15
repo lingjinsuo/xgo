@@ -1,0 +1,28 @@
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market.log | grep "SecurityDefinitionHandler" | grep '"SecurityCode":90009,' | tail -n 1
+[market]2026/07/09 - 08:23:18.885534    info    D:/code/stock_market/format/stockHandler/handers/securityDefinitionHandler.go:245       SecurityDefinitionHandler       {"SecurityDefinitionHandler": {"MsgSize":544,"MsgType":11,"ChannelId":501,"SN":184564,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":560,"LineName":"B","SendTime":1735604505990000000,"ReceiveTime":"2026-07-09T08:21:42.828224041+08:00","SecurityCode":90009,"MarketCode":"MAIN","ISINCode":"AU0000299484","InstrumentType":"EQTY","ProductType":12,"Filler":"","SpreadTableCode":"03","SecurityShortName":"TEST FIRM 9                             ","CurrencyCode":"HKD","SecurityNameGCCS":"ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯ","SecurityNameGB":"ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯ","LotSize":20000,"Filler1":"","PreviousClosingPrice":9995000,"VCMFlag":"N","ShortSellFlag":"N","CASFlag":"Y","CCASSFlag":"N","DummySecurityFlag":"N","Filler2":"","StampDutyFlag":"N","Filler3":"","ListingDate":19970701,"DelistingDate":20160101,"FreeText":"12345678901234567891234567890123456789","Filler4":"                                                              ","POSFlag":"Y","POSUpperLimit":9999950,"POSLowerLimit":8495750,"Filler5":"","EFNFlag":"","AccruedInterest":0,"CouponRate":0,"Filler6":"","FaceValue":0,"DecimalsInFaceValue":0,"FaceValueCurrency":"   ","MaturityDate1":0,"InvestorType":" ","Filler7":"","ConversionRatio":0,"StrikePrice1":0,"StrikePrice2":0,"MaturityDate2":0,"CallPutFlag":"","Style":"","Filler8":"","WarrantType":" ","CallPrice":0,"DecimalsInCallPrice":0,"Entitlement":0,"DecimalsInEntitlement":0,"NoWarrantsPerEntitlement":0,"Filler9":"                 ","NoUnderlyingSecurities":0,"UnderlyingSecurityCodes":[]}}
+
+90009
+MAIN
+AU0000299484
+EQTY
+12
+03
+test firm 9
+HKD
+ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯ
+ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯ
+20000
+9995.000
+N
+N
+Y
+N
+N
+N
+19970701
+20160101
+12345678901234567891234567890123456789
+Y
+9999.950
+8495.750
+0
