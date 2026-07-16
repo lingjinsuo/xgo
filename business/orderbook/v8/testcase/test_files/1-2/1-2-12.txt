@@ -1,0 +1,35 @@
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "SecurityDefinitionHandler" | grep '"SecurityCode":7805,' | tail -n 1
+[market]2026/07/09 - 08:23:42.380126    info    D:/code/stock_market/format/stockHandler/handers/securityDefinitionHandler.go:245       SecurityDefinitionHandler       {"SecurityDefinitionHandler": {"MsgSize":544,"MsgType":11,"ChannelId":501,"SN":186242,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":560,"LineName":"B","SendTime":1735604510822000000,"ReceiveTime":"2026-07-09T08:21:47.6646783+08:00","SecurityCode":7805,"MarketCode":"GEM ","ISINCode":"            ","InstrumentType":"EQTY","ProductType":1,"Filler":"","SpreadTableCode":"01","SecurityShortName":"TEST G5-6                               ","CurrencyCode":"USD","SecurityNameGCCS":"00000000000000�","SecurityNameGB":"00000000000000�","LotSize":1000,"Filler1":"","PreviousClosingPrice":375,"VCMFlag":"Y","ShortSellFlag":"Y","CASFlag":"Y","CCASSFlag":"N","DummySecurityFlag":"N","Filler2":"","StampDutyFlag":"N","Filler3":"","ListingDate":20161103,"DelistingDate":0,"FreeText":"+ TRADING RESUMED +                   ","Filler4":"                                                              ","POSFlag":"Y","POSUpperLimit":430,"POSLowerLimit":320,"Filler5":"�\f","EFNFlag":"","AccruedInterest":0,"CouponRate":0,"Filler6":"","FaceValue":0,"DecimalsInFaceValue":0,"FaceValueCurrency":"   ","MaturityDate1":0,"InvestorType":" ","Filler7":"","ConversionRatio":0,"StrikePrice1":0,"StrikePrice2":0,"MaturityDate2":0,"CallPutFlag":"","Style":"","Filler8":"","WarrantType":" ","CallPrice":0,"DecimalsInCallPrice":0,"Entitlement":0,"DecimalsInEntitlement":0,"NoWarrantsPerEntitlement":0,"Filler9":"                 ","NoUnderlyingSecurities":0,"UnderlyingSecurityCodes":[]}}
+
+SecurityCode	07805
+MarketCode	GEM
+ISINCode
+InstrumentType	EQTY
+ProductType	1
+SpreadTableCode	01
+SecurityShortName	TEST G5-6
+CurrencyCode	USD
+SecurityNameGCCS
+SecurityNameGB
+LotSize	1000
+PreviousClosingPrice	0.375
+VCMFlag	Y
+ShortSellFlag	Y
+CASFlag	Y
+CCASSFlag	N
+DummySecurityFlag	N
+StampDutyFlag	N
+ListingDate	20161103
+DelistingDate	0
+FreeText	+ TRADING RESUMED +
+POSFlag	Y
+POSUpperLimit	0.430
+POSLowerLimit	0.320
+DomainStmtSecurityCode	03223
+
+
+
+
+[ops@hk-t-lianghua-server01 logs]$ cat stock_market.log | grep "SF test case 1-2 Scenario 12" | tail -n 1
+2026/07/09 08:23:42.380046      INFO    D:/code/stock_market/format/stockHandler/handers/securityDefinitionHandler.go:164       SF test case 1-2 Scenario 12  msg={MsgHeader:{MsgSize:544 MsgType:11 ChannelId:501 Msg:[80 4 2 0 129 215 2 0 128 101 28 98 27 27 22 24 32 2 11 0 124 30 0 0 77 65 73 78 32 32 32 32 32 32 32 32 32 32 32 32 69 81 84 89 7 0 48 49 84 69 83 84 32 70 79 82 32 55 32 69 81 85 73 84 89 32 45 32 68 69 80 79 83 73 84 79 82 89 32 82 69 67 69 73 80 84 32 40 72 75 68 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 232 3 0 0 0 0 0 0 0 0 0 0 78 78 78 89 78 0 78 0 117 197 51 1 0 0 0 0 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 32 32 0 0 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 2 11 0 125 30 0 0 71 69 77 32 32 32 32 32 32 32 32 32 32 32 32 32 69 81 84 89 1 0 48 49 84 69 83 84 32 71 53 45 54 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 85 83 68 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 232 3 0 0 0 0 0 0 119 1 0 0 89 89 89 78 78 0 78 0 79 162 51 1 0 0 0 0 43 32 84 82 65 68 73 78 71 32 82 69 83 85 77 69 68 32 43 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 89 174 1 0 0 64 1 0 0 151 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 32 32 0 0 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] SN:186242 Url:239.1.1.31:51000 UdpType:RefreshR Offset:560 LineName:B SendTime:1735604510822000000 ReceiveTime:2026-07-09 08:21:47.6646783 +0800 HKT m=+1745.139784358} SecurityCode:7805 MarketCode:GEM  ISINCode:             InstrumentType:EQTY ProductType:1 Filler: SpreadTableCode:01 SecurityShortName:TEST G5-6                                CurrencyCode:USD SecurityNameGCCS:00000000000000� SecurityNameGB:00000000000000� LotSize:1000 Filler1: PreviousClosingPrice:375 VCMFlag:Y ShortSellFlag:Y CASFlag:Y CCASSFlag:N DummySecurityFlag:N Filler2: StampDutyFlag:N Filler3: ListingDate:20161103 DelistingDate:0 FreeText:+ TRADING RESUMED +                    Filler4:                                                               POSFlag:Y POSUpperLimit:430 POSLowerLimit:320 Filler5:�
+                   EFNFlag: AccruedInterest:0 CouponRate:0 Filler6: FaceValue:0 DecimalsInFaceValue:0 FaceValueCurrency:    MaturityDate1:0 InvestorType:  Filler7: ConversionRatio:0 StrikePrice1:0 StrikePrice2:0 MaturityDate2:0 CallPutFlag: Style: Filler8: WarrantType:  CallPrice:0 DecimalsInCallPrice:0 Entitlement:0 DecimalsInEntitlement:0 NoWarrantsPerEntitlement:0 Filler9:                  NoUnderlyingSecurities:0 UnderlyingSecurityCodes:[]}

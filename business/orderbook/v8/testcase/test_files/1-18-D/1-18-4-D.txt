@@ -13,4 +13,35 @@
 
 
 [market]2026/07/09 - 14:00:33.964318    info    D:/code/stock_market/format/stockHandler/handers/brokerQueueHandler.go:103      BrokerQueueHandler      {"BrokerQueueHandler": {"MsgSize":12,"MsgType":54,"ChannelId":60,"SN":6890,"Url":"239.1.1.28:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735624829050000000,"ReceiveTime":"2026-07-09T14:00:33.964219654+08:00","SecurityCode":2404,"ItemCount":0,"Side":1,"BQMoreFlag":"","BrokerQueues":null}}
-[market]2026/07/09 - 16:00:08.855559    info    D:/code/stock_market/format/stockHandler/handers/brokerQueueHandler.go:103      BrokerQueueHandler      {"BrokerQueueHandler": {"MsgSize":136,"MsgType":54,"ChannelId":60,"SN":6908,"Url":"239.1.1.28:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735632001115000000,"ReceiveTime":"2026-07-09T16:00:08.855325118+08:00","SecurityCode":2404,"ItemCount":31,"Side":2,"BQMoreFlag":"","BrokerQueues":[{"Item":6011,"Type":"B","Filler":""},{"Item":1,"Type":"S","Filler":""},{"Item":0,"Type":"S","Filler":""},{"Item":2,"Type":"S","Filler":""},{"Item":0,"Type":"S","Filler":""},{"Item":3,"Type":"S","Filler":""},{"Item":0,"Type":"S","Filler":""},{"Item":4,"Type":"S","Filler":""},{"Item":0,"Type":"S","Filler":""},{"Item":5,"Type":"S","Filler":""},{"Item":0,"Type":"S","Filler":""},{"Item":6,"Type":"S","Filler":""},{"Item":0,"Type":"S","Filler":""},{"Item":7,"Type":"S","Filler":""},{"Item":0,"Type":"S","Filler":""},{"Item":8,"Type":"S","Filler":""},{"Item":0,"Type":"S","Filler":""},{"Item":9,"Type":"S","Filler":""},{"Item":0,"Type":"S","Filler":""},{"Item":10,"Type":"S","Filler":""},{"Item":0,"Type":"S","Filler":""},{"Item":11,"Type":"S","Filler":""},{"Item":0,"Type":"S","Filler":""},{"Item":12,"Type":"S","Filler":""},{"Item":6011,"Type":"B","Filler":""},{"Item":13,"Type":"S","Filler":""},{"Item":0,"Type":"S","Filler":""},{"Item":14,"Type":"S","Filler":""},{"Item":6011,"Type":"B","Filler":""},{"Item":15,"Type":"S","Filler":""},{"Item":6011,"Type":"B","Filler":""}]}}
+[market]2026/07/09 - 16:00:08.855559    info    D:/code/stock_market/format/stockHandler/handers/brokerQueueHandler.go:103      BrokerQueueHandler      {"BrokerQueueHandler": {"MsgSize":136,"MsgType":54,"ChannelId":60,"SN":6908,"Url":"239.1.1.28:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735632001115000000,"ReceiveTime":"2026-07-09T16:00:08.855325118+08:00","SecurityCode":2404,"ItemCount":31,"Side":2,"BQMoreFlag":"","BrokerQueues":[
+{"Item":6011,"Type":"B","Filler":""}
+{"Item":1,"Type":"S","Filler":""}
+{"Item":0,"Type":"S","Filler":""}
+{"Item":2,"Type":"S","Filler":""}
+{"Item":0,"Type":"S","Filler":""}
+{"Item":3,"Type":"S","Filler":""}
+{"Item":0,"Type":"S","Filler":""}
+{"Item":4,"Type":"S","Filler":""}
+{"Item":0,"Type":"S","Filler":""}
+{"Item":5,"Type":"S","Filler":""}
+{"Item":0,"Type":"S","Filler":""}
+{"Item":6,"Type":"S","Filler":""}
+{"Item":0,"Type":"S","Filler":""}
+{"Item":7,"Type":"S","Filler":""}
+{"Item":0,"Type":"S","Filler":""}
+{"Item":8,"Type":"S","Filler":""}
+{"Item":0,"Type":"S","Filler":""}
+{"Item":9,"Type":"S","Filler":""}
+{"Item":0,"Type":"S","Filler":""}
+{"Item":10,"Type":"S","Filler":""}
+{"Item":0,"Type":"S","Filler":""}
+{"Item":11,"Type":"S","Filler":""}
+{"Item":0,"Type":"S","Filler":""}
+{"Item":12,"Type":"S","Filler":""}
+{"Item":6011,"Type":"B","Filler":""}
+{"Item":13,"Type":"S","Filler":""}
+{"Item":0,"Type":"S","Filler":""}
+{"Item":14,"Type":"S","Filler":""}
+{"Item":6011,"Type":"B","Filler":""}
+{"Item":15,"Type":"S","Filler":""}
+{"Item":6011,"Type":"B","Filler":""}]}}

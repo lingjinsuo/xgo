@@ -1,0 +1,47 @@
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market.log | grep "OrderImbalanceHandler" | grep '"SecurityCode":2405,' | grep -E '"SN":(111|113|3547),'
+[market]2026/07/09 - 09:01:21.828915    info    D:/code/stock_market/format/stockHandler/handers/orderImbalanceHandler.go:67    OrderImbalanceHandler   {"OrderImbalanceHandler": {"MsgSize":20,"MsgType":56,"ChannelId":30,"SN":111,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":36,"LineName":"A","SendTime":1735606884207000000,"ReceiveTime":"2026-07-09T09:01:21.828521481+08:00","SecurityCode":2405,"OrderImbalanceDirection":"S","Filler1":"\u001b","OrderImbalanceQuantity":5000,"Filler2":""}}
+"SF" SeqNum	111
+SecurityCode	02405
+OrderImbalanceDirection	S
+OrderImbalanceQuantity	5000
+
+[market]2026/07/09 - 09:01:23.577268    info    D:/code/stock_market/format/stockHandler/handers/orderImbalanceHandler.go:67    OrderImbalanceHandler   {"OrderImbalanceHandler": {"MsgSize":20,"MsgType":56,"ChannelId":30,"SN":113,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":36,"LineName":"A","SendTime":1735606885955000000,"ReceiveTime":"2026-07-09T09:01:23.57694213+08:00","SecurityCode":2405,"OrderImbalanceDirection":"B","Filler1":"\u001b","OrderImbalanceQuantity":6000,"Filler2":""}}
+113
+02405
+B
+6000
+
+[market]2026/07/09 - 09:20:29.534417    info    D:/code/stock_market/format/stockHandler/handers/orderImbalanceHandler.go:67    OrderImbalanceHandler   {"OrderImbalanceHandler": {"MsgSize":20,"MsgType":56,"ChannelId":30,"SN":3547,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":100,"LineName":"A","SendTime":1735608031462000000,"ReceiveTime":"2026-07-09T09:20:29.533696702+08:00","SecurityCode":2405,"OrderImbalanceDirection":" ","Filler1":"\u0017","OrderImbalanceQuantity":0,"Filler2":""}}
+3547
+02405
+
+0
+
+
+
+
+[root@hk-t-lianghua-server01 stock_market_log]# cat stock_market.log | grep "OrderImbalanceHandler" | grep '"SecurityCode":2411,' | grep -E '"SN":(10440|10441|10443|10445),'
+[market]2026/07/09 - 16:01:22.817320    info    D:/code/stock_market/format/stockHandler/handers/orderImbalanceHandler.go:67    OrderImbalanceHandler   {"OrderImbalanceHandler": {"MsgSize":20,"MsgType":56,"ChannelId":30,"SN":10440,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":36,"LineName":"A","SendTime":1735632075034000000,"ReceiveTime":"2026-07-09T16:01:22.817053642+08:00","SecurityCode":2411,"OrderImbalanceDirection":"N","Filler1":"\u0003","OrderImbalanceQuantity":0,"Filler2":""}}
+10440
+02411
+N
+0
+
+
+[market]2026/07/09 - 16:01:24.374001    info    D:/code/stock_market/format/stockHandler/handers/orderImbalanceHandler.go:67    OrderImbalanceHandler   {"OrderImbalanceHandler": {"MsgSize":20,"MsgType":56,"ChannelId":30,"SN":10441,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735632076591000000,"ReceiveTime":"2026-07-09T16:01:24.373771348+08:00","SecurityCode":2411,"OrderImbalanceDirection":"S","Filler1":"\u0003","OrderImbalanceQuantity":1000,"Filler2":""}}
+10441
+02411
+S
+1000
+
+[market]2026/07/09 - 16:01:35.344044    info    D:/code/stock_market/format/stockHandler/handers/orderImbalanceHandler.go:67    OrderImbalanceHandler   {"OrderImbalanceHandler": {"MsgSize":20,"MsgType":56,"ChannelId":30,"SN":10443,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735632087562000000,"ReceiveTime":"2026-07-09T16:01:35.343943264+08:00","SecurityCode":2411,"OrderImbalanceDirection":" ","Filler1":"\u000f","OrderImbalanceQuantity":0,"Filler2":""}}
+10443
+02411
+
+0
+
+[market]2026/07/09 - 16:01:52.196721    info    D:/code/stock_market/format/stockHandler/handers/orderImbalanceHandler.go:67    OrderImbalanceHandler   {"OrderImbalanceHandler": {"MsgSize":20,"MsgType":56,"ChannelId":30,"SN":10445,"Url":"239.1.1.24:51000","UdpType":"RefreshU","Offset":36,"LineName":"A","SendTime":1735632104410000000,"ReceiveTime":"2026-07-09T16:01:52.196475902+08:00","SecurityCode":2411,"OrderImbalanceDirection":"B","Filler1":"\u000f","OrderImbalanceQuantity":3000,"Filler2":""}}
+10445
+02411
+B
+3000

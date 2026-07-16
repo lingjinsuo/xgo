@@ -1,0 +1,57 @@
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "SecurityDefinitionHandler" | grep '"SecurityCode":90024,' | tail -n 1
+[market]2026/07/09 - 08:23:19.341249    info    D:/code/stock_market/format/stockHandler/handers/securityDefinitionHandler.go:245       SecurityDefinitionHandler       {"SecurityDefinitionHandler": {"MsgSize":544,"MsgType":11,"ChannelId":501,"SN":184595,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":560,"LineName":"B","SendTime":1735604506080000000,"ReceiveTime":"2026-07-09T08:21:42.918304443+08:00","SecurityCode":90024,"MarketCode":"MAIN","ISINCode":"HI0000288016","InstrumentType":"WRNT","ProductType":14,"Filler":"","SpreadTableCode":"03","SecurityShortName":"TEST WAR 24                             ","CurrencyCode":"CNY","SecurityNameGCCS":"測試權證","SecurityNameGB":"测试权证","LotSize":100000,"Filler1":"","PreviousClosingPrice":9995000,"VCMFlag":"N","ShortSellFlag":"N","CASFlag":"N","CCASSFlag":"N","DummySecurityFlag":"N","Filler2":"","StampDutyFlag":"N","Filler3":"","ListingDate":19880122,"DelistingDate":0,"FreeText":"                                      ","Filler4":"                                                              ","POSFlag":"N","POSUpperLimit":0,"POSLowerLimit":0,"Filler5":"","EFNFlag":"","AccruedInterest":0,"CouponRate":0,"Filler6":"","FaceValue":0,"DecimalsInFaceValue":0,"FaceValueCurrency":"   ","MaturityDate1":0,"InvestorType":" ","Filler7":"","ConversionRatio":500000000,"StrikePrice1":5000,"StrikePrice2":0,"MaturityDate2":20200630,"CallPutFlag":"P","Style":"E","Filler8":"","WarrantType":"N","CallPrice":0,"DecimalsInCallPrice":0,"Entitlement":1,"DecimalsInEntitlement":0,"NoWarrantsPerEntitlement":0,"Filler9":"                 ","NoUnderlyingSecurities":0,"UnderlyingSecurityCodes":[]}}
+
+
+SecurityCode	90024
+MarketCode	MAIN
+ISINCode	HI0000288016
+InstrumentType	WRNT
+ProductType	14
+SpreadTableCode	03
+SecurityShortName	test war 24
+CurrencyCode	CNY
+SecurityNameGCCS	測試權證　　　　　　　　　　　
+SecurityNameGB	测试权证　　　　　　　　　　　　　　　　　　　　
+LotSize	100000
+PreviousClosingPrice	9995.000
+VCMFlag	N
+ShortSellFlag	N
+CASFlag	N
+CCASSFlag	N
+DummySecurityFlag	N
+StampDutyFlag	N
+ListingDate	19880122
+DelistingDate	0
+FreeText
+POSFlag	N
+POSUpperLimit	0.000
+POSLowerLimit	0.000
+DomainStmtSecurityCode	0
+EFNFlag	N/A
+AccruedInterest	N/A
+CouponRate	N/A
+FaceValue 	N/A
+DecimalsInFaceValue	N/A
+FaceValueCurrency 	N/A
+MaturityDate	N/A
+InvestorType	N/A
+ConversionRatio	500000.000
+StrikePrice1	5.000
+StrikePrice2	0.000
+MaturityDate	20200630
+CallPutFlag	P
+Style	E
+WarrantType	N
+CallPrice	0
+DecimalsInCallPrice	0
+Entitlement	1
+DecimalsInEntitlement	0
+NoWarrantsPerEntitlement	0
+NoUnderlyingSecurities	0
+UnderlyingSecurityCode
+
+
+
+
+[ops@hk-t-lianghua-server01 logs]$ cat stock_market.log | grep "SF test case 1-2 Scenario 7" | tail -n 1
+2026/07/09 08:23:19.341185      INFO    D:/code/stock_market/format/stockHandler/handers/securityDefinitionHandler.go:139       SF test case 1-2 Scenario 7  msg={MsgHeader:{MsgSize:544 MsgType:11 ChannelId:501 Msg:[80 4 2 0 18 209 2 0 0 56 119 71 26 27 22 24 32 2 11 0 167 95 1 0 77 65 73 78 78 90 48 48 48 48 51 50 51 51 56 51 87 82 78 84 13 0 48 49 84 69 83 84 32 87 65 82 32 50 51 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 72 75 68 44 110 102 138 10 107 73 139 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75 109 213 139 67 103 193 139 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80 195 0 0 0 0 0 0 248 130 152 0 89 89 78 89 78 0 89 0 185 187 48 1 0 0 0 0 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 32 32 0 0 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64 66 15 0 184 11 0 0 0 0 0 0 255 76 64 1 79 65 0 0 78 0 0 0 0 0 16 39 0 0 0 232 3 0 0 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 2 11 0 168 95 1 0 77 65 73 78 72 73 48 48 48 48 50 56 56 48 49 54 87 82 78 84 14 0 48 51 84 69 83 84 32 87 65 82 32 50 52 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 67 78 89 44 110 102 138 10 107 73 139 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75 109 213 139 67 103 193 139 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 160 134 1 0 0 0 0 0 248 130 152 0 78 78 78 78 78 0 78 0 186 88 47 1 0 0 0 0 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 32 32 0 0 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 101 205 29 136 19 0 0 0 0 0 0 182 60 52 1 80 69 0 0 78 0 0 0 0 0 1 0 0 0 0 0 0 0 0 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] SN:184595 Url:239.1.1.31:51000 UdpType:RefreshR Offset:560 LineName:B SendTime:1735604506080000000 ReceiveTime:2026-07-09 08:21:42.918304443 +0800 HKT m=+1740.393410490} SecurityCode:90024 MarketCode:MAIN ISINCode:HI0000288016 InstrumentType:WRNT ProductType:14 Filler: SpreadTableCode:03 SecurityShortName:TEST WAR 24                              CurrencyCode:CNY SecurityNameGCCS:測試權證 SecurityNameGB:测试权证 LotSize:100000 Filler1: PreviousClosingPrice:9995000 VCMFlag:N ShortSellFlag:N CASFlag:N CCASSFlag:N DummySecurityFlag:N Filler2: StampDutyFlag:N Filler3: ListingDate:19880122 DelistingDate:0 FreeText:                                       Filler4:                                                               POSFlag:N POSUpperLimit:0 POSLowerLimit:0 Filler5: EFNFlag: AccruedInterest:0 CouponRate:0 Filler6: FaceValue:0 DecimalsInFaceValue:0 FaceValueCurrency:    MaturityDate1:0 InvestorType:  Filler7: ConversionRatio:500000000 StrikePrice1:5000 StrikePrice2:0 MaturityDate2:20200630 CallPutFlag:P Style:E Filler8: WarrantType:N CallPrice:0 DecimalsInCallPrice:0 Entitlement:1 DecimalsInEntitlement:0 NoWarrantsPerEntitlement:0 Filler9:                  NoUnderlyingSecurities:0 UnderlyingSecurityCodes:[]}

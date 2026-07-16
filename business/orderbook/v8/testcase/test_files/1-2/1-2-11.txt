@@ -1,0 +1,34 @@
+[ops@hk-t-lianghua-server01 stock_market_log]$ cat stock_market.log | grep "SecurityDefinitionHandler" | grep '"SecurityCode":2423,' | tail -n 1
+[market]2026/07/09 - 08:22:57.021769    info    D:/code/stock_market/format/stockHandler/handers/securityDefinitionHandler.go:245       SecurityDefinitionHandler       {"SecurityDefinitionHandler": {"MsgSize":544,"MsgType":11,"ChannelId":501,"SN":182641,"Url":"239.1.1.31:51000","UdpType":"RefreshR","Offset":16,"LineName":"B","SendTime":1735604501993000000,"ReceiveTime":"2026-07-09T08:21:38.828159617+08:00","SecurityCode":2423,"MarketCode":"MAIN","ISINCode":"BMG1808K1009","InstrumentType":"EQTY","ProductType":1,"Filler":"","SpreadTableCode":"01","SecurityShortName":"BURWILL                                 ","CurrencyCode":"CNY","SecurityNameGCCS":"00000000000000�","SecurityNameGB":"00000000000000�","LotSize":1000,"Filler1":"","PreviousClosingPrice":7500000,"VCMFlag":"Y","ShortSellFlag":"Y","CASFlag":"Y","CCASSFlag":"Y","DummySecurityFlag":"N","Filler2":"","StampDutyFlag":"Y","Filler3":"","ListingDate":19830915,"DelistingDate":0,"FreeText":"+ TRADING RESUMED +                   ","Filler4":"                                                              ","POSFlag":"Y","POSUpperLimit":8625000,"POSLowerLimit":6375000,"Filler5":"�\u001c","EFNFlag":"","AccruedInterest":0,"CouponRate":0,"Filler6":"","FaceValue":0,"DecimalsInFaceValue":0,"FaceValueCurrency":"   ","MaturityDate1":0,"InvestorType":" ","Filler7":"","ConversionRatio":0,"StrikePrice1":0,"StrikePrice2":0,"MaturityDate2":0,"CallPutFlag":"","Style":"","Filler8":"","WarrantType":" ","CallPrice":0,"DecimalsInCallPrice":0,"Entitlement":0,"DecimalsInEntitlement":0,"NoWarrantsPerEntitlement":0,"Filler9":"                 ","NoUnderlyingSecurities":0,"UnderlyingSecurityCodes":[]}}
+
+SecurityCode	02423
+MarketCode	MAIN
+ISINCode	BMG1808K1009
+InstrumentType	EQTY
+ProductType	1
+SpreadTableCode	01
+SecurityShortName	BURWILL
+CurrencyCode	CNY
+SecurityNameGCCS
+SecurityNameGB
+LotSize	1000
+PreviousClosingPrice	7500
+VCMFlag	Y
+ShortSellFlag	Y
+CASFlag	Y
+CCASSFlag	Y
+DummySecurityFlag	N
+StampDutyFlag	Y
+ListingDate	19830915
+DelistingDate	0
+FreeText	+ TRADING RESUMED +
+POSFlag	Y
+POSUpperLimit	8625.000
+POSLowerLimit	6375.000
+DomainStmtSecurityCode	07401
+
+
+
+
+[ops@hk-t-lianghua-server01 logs]$ cat stock_market.log | grep "SF test case 1-2 Scenario 11" | tail -n 1
+2026/07/09 08:22:57.021700      INFO    D:/code/stock_market/format/stockHandler/handers/securityDefinitionHandler.go:159       SF test case 1-2 Scenario 11  msg={MsgHeader:{MsgSize:544 MsgType:11 ChannelId:501 Msg:[100 4 3 0 113 201 2 0 64 140 220 83 25 27 22 24 32 2 11 0 119 9 0 0 77 65 73 78 66 77 71 49 56 48 56 75 49 48 48 57 69 81 84 89 1 0 48 49 66 85 82 87 73 76 76 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 67 78 89 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 232 3 0 0 0 0 0 0 224 112 114 0 89 89 89 89 78 0 89 0 131 152 46 1 0 0 0 0 43 32 84 82 65 68 73 78 71 32 82 69 83 85 77 69 68 32 43 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 89 104 155 131 0 88 70 97 0 233 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 32 32 0 0 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40 2 11 0 120 57 0 0 77 65 73 78 78 65 32 32 32 32 32 32 32 32 32 32 87 82 78 84 3 0 48 49 77 66 45 78 67 73 32 64 69 67 49 55 48 57 65 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 72 75 68 176 101 221 79 165 158 128 146 3 78 93 78 252 140 33 255 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 176 101 221 79 166 158 246 148 3 78 93 78 45 141 33 255 0 48 0 48 0 48 0 48 0 48 0 48 0 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 232 3 0 0 0 0 0 0 133 0 0 0 78 78 78 89 78 0 78 0 177 162 51 1 0 0 0 0 69 88 69 82 32 68 65 84 69 58 48 52 47 48 57 47 49 55 32 42 76 80 57 55 49 51 45 51 57 50 50 32 51 55 56 56 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 32 32 0 0 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 39 0 0 240 190 0 0 0 0 0 0 152 200 51 1 67 69 0 0 78 0 0 0 0 0 0 0 0 0 3 0 0 0 0 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 56 5 0 0 0 0 0 0 12 0 13 0 120 57 0 0 1 0 241 37] SN:182641 Url:239.1.1.31:51000 UdpType:RefreshR Offset:16 LineName:B SendTime:1735604501993000000 ReceiveTime:2026-07-09 08:21:38.828159617 +0800 HKT m=+1736.303265676} SecurityCode:2423 MarketCode:MAIN ISINCode:BMG1808K1009 InstrumentType:EQTY ProductType:1 Filler: SpreadTableCode:01 SecurityShortName:BURWILL                                  CurrencyCode:CNY SecurityNameGCCS:00000000000000� SecurityNameGB:00000000000000� LotSize:1000 Filler1: PreviousClosingPrice:7500000 VCMFlag:Y ShortSellFlag:Y CASFlag:Y CCASSFlag:Y DummySecurityFlag:N Filler2: StampDutyFlag:Y Filler3: ListingDate:19830915 DelistingDate:0 FreeText:+ TRADING RESUMED +                    Filler4:                                                               POSFlag:Y POSUpperLimit:8625000 POSLowerLimit:6375000 Filler5:� EFNFlag: AccruedInterest:0 CouponRate:0 Filler6: FaceValue:0 DecimalsInFaceValue:0 FaceValueCurrency:    MaturityDate1:0 InvestorType:  Filler7: ConversionRatio:0 StrikePrice1:0 StrikePrice2:0 MaturityDate2:0 CallPutFlag: Style: Filler8: WarrantType:  CallPrice:0 DecimalsInCallPrice:0 Entitlement:0 DecimalsInEntitlement:0 NoWarrantsPerEntitlement:0 Filler9:                  NoUnderlyingSecurities:0 UnderlyingSecurityCodes:[]}

@@ -20,4 +20,8 @@
 
 
 [market]2026/07/09 - 14:11:41.345163    info    D:/code/stock_market/format/stockHandler/handers/brokerQueueHandler.go:103      BrokerQueueHandler      {"BrokerQueueHandler": {"MsgSize":12,"MsgType":54,"ChannelId":60,"SN":6897,"Url":"239.1.1.28:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735625496155000000,"ReceiveTime":"2026-07-09T14:11:41.345026903+08:00","SecurityCode":3414,"ItemCount":0,"Side":1,"BQMoreFlag":"","BrokerQueues":null}}
-[market]2026/07/09 - 14:17:44.776325    info    D:/code/stock_market/format/stockHandler/handers/brokerQueueHandler.go:103      BrokerQueueHandler      {"BrokerQueueHandler": {"MsgSize":24,"MsgType":54,"ChannelId":60,"SN":6898,"Url":"239.1.1.28:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735625859444000000,"ReceiveTime":"2026-07-09T14:17:44.776166786+08:00","SecurityCode":3414,"ItemCount":3,"Side":2,"BQMoreFlag":"","BrokerQueues":[{"Item":6011,"Type":"B","Filler":""},{"Item":1,"Type":"S","Filler":""},{"Item":6011,"Type":"B","Filler":""}]}}
+
+[market]2026/07/09 - 14:17:44.776325    info    D:/code/stock_market/format/stockHandler/handers/brokerQueueHandler.go:103      BrokerQueueHandler      {"BrokerQueueHandler": {"MsgSize":24,"MsgType":54,"ChannelId":60,"SN":6898,"Url":"239.1.1.28:51000","UdpType":"RefreshU","Offset":16,"LineName":"A","SendTime":1735625859444000000,"ReceiveTime":"2026-07-09T14:17:44.776166786+08:00","SecurityCode":3414,"ItemCount":3,"Side":2,"BQMoreFlag":"","BrokerQueues":[
+{"Item":6011,"Type":"B","Filler":""}
+{"Item":1,"Type":"S","Filler":""}
+{"Item":6011,"Type":"B","Filler":""}]}}
